@@ -1,0 +1,50 @@
+body{
+    background-color:whitesmoke ;
+   
+    
+    
+}
+.signup {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.email {
+    font-size: 20px;
+    align-content: center;
+    width: 40%;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+    
+   
+}
+.class1 {padding: 10px;}
+.submit{
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 24px;
+    
+    
+}
+form{
+    border:solid #0c0f12;
+    border-radius: 24px;
+    padding: 30px;
+}
+input{
+    border-radius: 12px;
+    
+}
+input:focus{
+    width: 250px;
+}

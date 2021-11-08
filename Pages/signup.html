@@ -4,47 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Signup </title>
-    <style>
-        body{
-            background-image: url(../Assets/src/img/whitee.jpg);
-            background-repeat: no-repeat;
-          background-size:cover;
-        background-attachment:fixed;
-            
-        }
-        .signup {
-            font-size: 30px;
-            text-align: center;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .signup1 {
-            text-align: center;
-            font-size: 30px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-        }
-
-        .email {
-            font-size: 20px;
-            align-content: center;
-            width: 40%;
-            height: 100%;
-        }
-        a{
-            text-decoration: none;
-            
-           
-        }
-        .class1 {padding: 10px;}
-        .button{
-            font-size: 20px;
-            padding: 5px;
-            
-        }
-
-        
-    </style>
+    <link rel="stylesheet" href="signup.css">
 </head>
 
 <body>
@@ -79,7 +39,7 @@
                     </h3>
 
                     <label for="Month"> </label>
-                    <select >
+                    <select>
                         <option value="Month"> Month </option>
                         <option value="Janaury"> Janaury </option>
                         <option value="February"> February </option>
@@ -96,17 +56,16 @@
 
                     </select>&nbsp;&nbsp;
                     <label for="Date">
-                    <input type="number"  placeholder="DD" required>&nbsp;&nbsp;
-                    <label for="Year">
-                        <input type="number" placeholder="YYYY"> 
+                        <input type="number" placeholder="DD" required>&nbsp;&nbsp;
+                        <label for="Year">
+                            <input type="number" placeholder="YYYY"> <br><br>
+                            <button class="submit"> <a href="musicpage.html"> Submit </a> </button>
 
 
         </form>
     </center>
     <br><br>
-    <center>
-<button class="button" > <a href="../Pages/First page.html"> Submit </a> </button>
-</center>
+    
 </body>
 
 </html>
