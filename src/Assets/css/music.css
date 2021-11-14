@@ -25,20 +25,31 @@ a{
     
     
 }
-.div1{
+/* .div1{
     color: aliceblue;
     padding-top: 150px;
     font-size: 90px;
     text-align: center;
     
+} */
+.div1{
+    margin-top: 10px;
 }
+.div1 img{
+    width: 800px;
+    height: 320px;
+    margin-top: 30px;
+    ;
+
+}
+
 
 img{
     border-radius: 24px;
     
 }
 img:hover{
-    opacity: 0.5;
+    opacity: 0.7;
     border-radius: 24px;
 }
 

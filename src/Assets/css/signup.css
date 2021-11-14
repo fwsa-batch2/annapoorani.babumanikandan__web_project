@@ -28,7 +28,7 @@ a{
     
    
 }
-.class1 {padding: 10px;}
+/* .class1 {padding: 10px;} */
 .submit{
     font-size: 20px;
     padding: 5px;
@@ -43,8 +43,12 @@ form{
 }
 input{
     border-radius: 12px;
+    padding: 10px;
     
 }
 input:focus{
     width: 250px;
+}
+select{
+    padding: 10px;
 }
