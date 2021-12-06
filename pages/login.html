@@ -5,33 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/src/Assets/css/login.css">
-   
+    <title>Fidaa</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
 </head>
 
 <body>
-    <center>
-        <div class="div1" >
-            <br><br>
-            <p class="class1"> To continue , log in to fidaa</p>
-            <p class="class2"> or </p>
-           <form action="musicpage.html">
+    <div class="MainContent">
+        <img src="./../assets/img/musicislife.jpg" alt="musicislife" class="Img">
+        <div class="Details">
 
-            
-            <p> <h3 class="class3">Email_ID or Phone number </h3></p>
-            <input type="text" id="email" name="Email_ID" placeholder="@gmail.com" class="class5" required>
-            <br>
-            <br>
-            <br>
-            <h3 class="class3"> Password </h3>
-            <input type="Password" id="password" name="password" placeholder="password" required class="class6"><br><br>
-            <a href=""> Forgot your password? </a><br><br>
+            <form action="/pages/musicpage.html">
+                <table class="Table">
+                    <tr>
+                        <td>Enter your Email_ID :</td></tr>
+                      <tr>  <td><input type="email" id="EmailValue" placeholder="Enter your Email_ID" required></td>
+                    </tr>
+                    <tr>
+                        <td> Password : </td></tr>
+                      <tr>  <td><input type="password" name="password" id="Password" placeholder="Password" required minlength="8" maxlength="12">
+                        </td>
+                    </tr>
+                </table>
+                <button  class="allButtons" type="reset">Reset</button> <a href="/pages/musicpage.html"><button class="allButtons" type="submit">Submit</button></a>
+                <!-- Enter your Email_ID : <input type="email" id="EmailValue"  required>
+            Password : <input type="password" name="password" id="Password" required minlength="8" maxlength="12"> -->
+            </form>
 
-            <button class="login">Login</button>
-           </form>
         </div>
-    </center>
+    </div>
 </body>
 
 </html>
