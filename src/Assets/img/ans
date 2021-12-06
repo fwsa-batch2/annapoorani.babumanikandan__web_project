@@ -1,8 +1,0 @@
-The Extensible Hypertext Markup Language, or XHTML, has two important notes for front end developers. It needs to be well formed, meaning all elements need to be closed and nested correctly or you will return errors. Since it is more strict than HTML is requires less pre-processing by the browser, which may improve your sites performance. 
-
-
-(1)Datalist:- Datalist provides functionality for auto-complete feature. (2)Datetime:- Datetime facilitate selecting a datetime along with Time Zone. (3)Output:- Output represents the result of a calculation. (4)Keygen:- Keygen generates a key-pair field in a form to implement secure authentication. (5)Date:- Date is an input field for date and applies validation accordingly. (6)Month:- Month for selecting a month and year in a form input field. (7)Week:- Week for selecting a week and year in an input field. (8)Time:- Time is an input field for selecting time i.e. Hours:Minutes: AM/PM. For example, 10:30 AM. (9)Color:- Color is an input field for color. (10)Number:- Number that only allows numeric values. (11)Range:- Range is an input field for selecting value within a specified range. (12)Email:- Email is input field for email with standard email validations. (13)URL:- Url is for an URL(Uniform Resource Locator) and validated accordingly. 
-
-
-
-
