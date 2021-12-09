@@ -62,3 +62,12 @@ input:focus{
 .AllButton{
     margin-left: 30%;
 }
+#invalid{
+    color: red;
+    font-size: 20px;
+    /* background-color: blanchedalmond; */
+    width: 20%;
+    height: 5vh;
+    margin-left: 50%;
+
+}
