@@ -18,31 +18,37 @@
         <img src="./../assets/img/clippart.jpg" alt="fidaa">
 
         <div class="Details">
-            <form action="/pages/musicpage.html" class="UserDetail">
-                Enter your Email_ID :<br><br> <input type="email" name="email" id="Mail_ID" placeholder="Enter your Email_ID"
-                    required> <br><br>
-
-                Confirm your Email_ID : <br><br><input type="email" name="email" id="Confirming_email"
-                    placeholder="Confirm your Email_ID" required><br><br>
+            <form onsubmit="submitHandler()" class="UserDetail">
+                Enter your Email_ID :<br><br> <input type="email" name="email" id="mailId"
+                    placeholder="Enter your Email_ID" required> <br><br>
 
                 Create password : <br><br>
-            
-                <input type="password" name="Password" placeholder="Enter your password" minlength="8" maxlength="10"
-                    required class="class1"><br><br>
+
+                <input type="password" name="Password" id="password" placeholder="Enter your password" minlength="8" maxlength="10"
+                    required class="class1">
+                    <span id="invalid"></span> <br>
+
+                Confirm password : <br><br>
+                <input type="password" name="password" id="confirmingPassword"
+                    placeholder="Confirm your password" minlength="8" maxlength="10" required>
+                     <br><br>
 
                 Enter your DOB : <br><br>
-                <input type="date" name="" required id="Getting_DOB">
+                <input type="date" name=""  id="gettingDOB" max="2021-12-31" min="1940-01-01">
                 <br><br>
                 Profile name :<br><br>
-                <input type="text" name="txt" id="ProfileName" placeholder="Enter your Profile name" required>
-
-               <span class="AllButton"> 
-                   <button class="Button" type="reset"> Reset</button> <a href="/pages/musicpage.html"> <button class="Button"  type="button" > Submit</button> </a></span>
+                <input type="text" name="txt" id="profileName" placeholder="Enter your Profile name" >
+                  <!-- <span id="invalid"></span>   -->
+                <span class="AllButton">
+                    <button class="Button" type="reset"> Reset</button>
+                    
+                    <button class="Button" type="submit"> Submit</button>
+                </span>
             </form>
         </div>
     </div>
 
-
+    <script src="/assets/js/signUp.js"></script>
 </body>
 
 </html>
