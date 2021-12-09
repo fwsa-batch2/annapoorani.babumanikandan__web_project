@@ -45,7 +45,7 @@ function submitHandler() {
     const valueInString = JSON.stringify(userDetailsInArray);
     localStorage.setItem("userDetails", valueInString);
 
-    // window.location.href = "./musicpage.html";
+    window.location.href = "./musicpage.html";
 }
 
 onPageLoad();

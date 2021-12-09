@@ -1,4 +1,4 @@
 function submitHandler(){
-    let 
+    let userDetailList = JSON.parse()
     
 }
