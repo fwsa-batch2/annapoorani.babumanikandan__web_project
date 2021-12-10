@@ -71,3 +71,12 @@ input:focus{
     margin-left: 50%;
 
 }
+#admin{
+    width: 14%;
+    height: 7vh;
+    position:absolute ;
+    margin-top: 2%;
+    margin-left: 185%;
+}
+
+

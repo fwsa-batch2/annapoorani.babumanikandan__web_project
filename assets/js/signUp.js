@@ -57,7 +57,7 @@ function validate(mailIdOfUser) {
 
 
     if (userList != null) {
-        for (i = 0; i < userList.length; i++) {
+        for (let i = 0; i < userList.length; i++) {
 
             const userDetailList = userList[i];
             const userEmail = userDetailList.mailId;

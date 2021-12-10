@@ -47,4 +47,11 @@ input{
     margin-left: 20%;
     margin-top: 5%;
 }
+#admin{
+    width: 7%;
+    height: 5vh;
+    margin-top: 2%;
+    margin-left: 90%;
+    position: absolute;
+}
 
