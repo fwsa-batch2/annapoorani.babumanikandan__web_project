@@ -2,6 +2,7 @@ let userDetailsInArray = [];
 
 function onPageLoad() {
     let userList = JSON.parse(localStorage.getItem("userDetails"));
+    console.log(userList);
     if (userList) {
         userDetailsInArray = userList;
     }
@@ -40,6 +41,8 @@ function submitHandler() {
         return;
     }
 
+//    const dobValidation = validatingDob(dateOfBirth);
+
 
     userDetailsInArray.push(userValue);
     const valueInString = JSON.stringify(userDetailsInArray);
@@ -75,7 +78,13 @@ function validate(mailIdOfUser) {
     return isExist;
 }
 
+// function validatingDob(Dob){
+//     if (Dob<10){
+//         alert("You are lessthan 10 years");
 
+//     }
+    
+// }
 
 
 
