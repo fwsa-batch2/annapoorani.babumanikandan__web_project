@@ -34,15 +34,12 @@ function submitHandler() {
 
 
     let validatingEmail = validate(mailId);
-    console.log(validatingEmail);
+    // console.log(validatingEmail);
 
     if (validatingEmail) {
         alert("This email_Id is already existed!");
         return;
     }
-
-//    const dobValidation = validatingDob(dateOfBirth);
-
 
     userDetailsInArray.push(userValue);
     const valueInString = JSON.stringify(userDetailsInArray);
@@ -51,7 +48,7 @@ function submitHandler() {
     window.location.href = "./musicpage.html";
 }
 
-onPageLoad();
+
 
 function validate(mailIdOfUser) {
 
@@ -65,7 +62,7 @@ function validate(mailIdOfUser) {
             const userDetailList = userList[i];
             const userEmail = userDetailList.mailId;
 
-            if (mailIdOfUser.toLowercase() == userEmail.toLowercase()) {
+            if (mailIdOfUser == userEmail) {
                 isExist = true;
                 break;
             }
@@ -94,6 +91,7 @@ function check(){
     }
 }
 
+onPageLoad();
 
 
 

@@ -16,7 +16,6 @@ function submitHandler(){
     // const userDetailList = JSON.parse(localStorage.getItem("userDetails"));
     // console.log(userDetailList);
     
-
     const userMailId = document.getElementById("EmailValue").value;
     const passWord = document.getElementById("Password").value;
 
