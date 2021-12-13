@@ -3,7 +3,7 @@ let userDetailsInArray = [];
 function onPageLoad (){
     const userDetailList = JSON.parse(localStorage.getItem("userDetails"));
     console.log(userDetailList);
-    if (userDetailList){
+    if (userDetailList == null){
         userDetailsInArray = userDetailList;
     }
 
@@ -35,8 +35,19 @@ function submitHandler(){
         }
     }
 
+    function checking(){
+        const showPassword = document.getElementById("checkbox");
 
-
+        if(showPassword.checked == true){
+            document.getElementById("password").type = "text";
+            console.log(document.getElementById("password").type = "text");
+        }
+        else{
+            document.getElementById("password").type = "password";
+            console.log(document.getElementById("password").type ="password");
+        }
+    }
+    
 
  
 

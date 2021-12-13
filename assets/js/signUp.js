@@ -31,7 +31,7 @@ function submitHandler() {
         return;
     }
 
-    // console.log(userDetails);-]
+
 
     let validatingEmail = validate(mailId);
     console.log(validatingEmail);
@@ -65,7 +65,7 @@ function validate(mailIdOfUser) {
             const userDetailList = userList[i];
             const userEmail = userDetailList.mailId;
 
-            if (mailIdOfUser == userEmail) {
+            if (mailIdOfUser.toLowercase() == userEmail.toLowercase()) {
                 isExist = true;
                 break;
             }
@@ -78,13 +78,21 @@ function validate(mailIdOfUser) {
     return isExist;
 }
 
-// function validatingDob(Dob){
-//     if (Dob<10){
-//         alert("You are lessthan 10 years");
+function check(){
+    const showPassword = document.getElementById("checkbox");
 
-//     }
-    
-// }
+    if(showPassword.checked){
+        document.getElementById("password").type = "text";
+        document.getElementById("confirmingPassword").type = "text";
+        // console.log(document.getElementById("password").type = "text");
+
+    }
+    else{
+        document.getElementById("password").type = "password";
+        document.getElementById("confirmingPassword").type = "password";
+        // console.log(document.getElementById("password").type = "password");
+    }
+}
 
 
 

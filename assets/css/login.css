@@ -65,3 +65,7 @@ input{
     position: absolute;
 } */
 
+#checkbox{
+    width: 5%;
+    height: 2vh;
+}

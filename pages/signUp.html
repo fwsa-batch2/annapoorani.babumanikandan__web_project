@@ -26,16 +26,19 @@
                 Create password : <br><br>
 
                 <input type="password" name="Password" id="password" placeholder="Enter your password" minlength="8" maxlength="10"
-                    required class="class1">
+                    required class="class1" >
+                    <input type="checkbox" name="showPassword" id="checkbox" onchange="check()">
+
                     <span id="invalid"></span> <br>
 
                 Confirm password : <br><br>
                 <input type="password" name="password" id="confirmingPassword"
-                    placeholder="Confirm your password" minlength="8" maxlength="10" required>
+                    placeholder="Confirm your password" minlength="8" maxlength="10" required >
                      <br><br>
 
                 Enter your DOB : <br><br>
-                <input type="date" name=""  id="gettingDOB" max="2021-12-31" min="1940-01-01">
+                <input type="date" name=""  id="gettingDOB"  max="2010-12-31" min="1940-01-01" >
+                
                 <br><br>
                 Profile name :<br><br>
                 <input type="text" name="txt" id="profileName" placeholder="Enter your Profile name" >
