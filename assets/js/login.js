@@ -2,7 +2,7 @@ let userDetailsInArray = [];
 
 function onPageLoad() {
     const userDetailList = JSON.parse(localStorage.getItem("userDetails"));
-    console.log(userDetailList);
+    // console.log(userDetailList);
     if (userDetailList !== null) {
         userDetailsInArray = userDetailList;
     }
