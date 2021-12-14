@@ -1,54 +1,81 @@
 let userDetailsInArray = [];
 
-function onPageLoad (){
+function onPageLoad() {
     const userDetailList = JSON.parse(localStorage.getItem("userDetails"));
     console.log(userDetailList);
-    if (userDetailList == null){
+    if (userDetailList !== null) {
         userDetailsInArray = userDetailList;
     }
-
+    // console.log(userDetailsInArray);
 }
-onPageLoad ();
 
-function submitHandler(){
+
+function submitHandler() {
     event.preventDefault();
 
-    // const userDetailList = JSON.parse(localStorage.getItem("userDetails"));
-    // console.log(userDetailList);
-    
+
     const userMailId = document.getElementById("EmailValue").value;
-    const passWord = document.getElementById("Password").value;
+    const passWord = document.getElementById("password").value;
 
-        for(let i=0;i<userDetailsInArray.length;i++){
-            const valuesInArray = userDetailsInArray[i];
-            const userEmail = valuesInArray.mailId ;
-            const userPw =valuesInArray.passWord;
 
-            if (userMailId !== userEmail || passWord !== userPw){
-                document.getElementById("invalid").innerHTML= "Invalid login credentials";
-            }
-            else{
-                document.getElementById("invalid").innerHTML = "Successfully Loggedin";
-                window.location.href = "./musicpage.html"
-            }
-        }
+    let isDetailExist = isUserDetailExist(userMailId, passWord);
+    if (isDetailExist !== true) {
+        document.getElementById("invalid").innerText = "Invalid login credentials";
+        return null;
+
+    }
+    else {
+
+        window.location.href = "./musicpage.html";
+        localStorage.setItem("LoggedIn", userMailId);
     }
 
-    function checking(){
-        const showPassword = document.getElementById("checkbox");
 
-        if(showPassword.checked == true){
-            document.getElementById("password").type = "text";
-            console.log(document.getElementById("password").type = "text");
+}
+
+function isUserDetailExist(userMail, userPassword) {
+
+    let isExist = false;
+    const lengthOfArray = userDetailsInArray.length;
+
+    for (let i = 0; i < lengthOfArray; i++) {
+        const valuesInArray = userDetailsInArray[i];
+        const userEmail = valuesInArray.mailId;
+        const userPw = valuesInArray.Password;
+        console.log(userEmail);
+        console.log(userPw);
+
+        if (userMail === userEmail && userPassword === userPw) {
+
+            isExist = true;
+            break;
         }
-        else{
-            document.getElementById("password").type = "password";
-            console.log(document.getElementById("password").type ="password");
+        else {
+            isExist = false;
+
         }
     }
-    
+    return isExist;
+}
 
- 
+function checking() {
+    const showPassword = document.getElementById("checkbox");
+
+    if (showPassword.checked == true) {
+        document.getElementById("password").type = "text";
+        console.log(document.getElementById("password").type = "text");
+
+    }
+    else {
+        document.getElementById("password").type = "password";
+        console.log(document.getElementById("password").type = "password");
+    }
+}
+
+onPageLoad();
 
 
-    
+
+
+
+
