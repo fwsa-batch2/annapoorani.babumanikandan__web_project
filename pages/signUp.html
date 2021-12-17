@@ -21,19 +21,19 @@
           <a href="./musicpage.html">   <img src="/assets/img/admin.png" alt="admin" id="admin"> </a>
             <form onsubmit="submitHandler()" class="UserDetail">
                 Enter your Email_ID :<br><br> <input type="email" name="email" id="mailId"
-                    placeholder="Enter your Email_ID" required> <br><br>
+                    placeholder="Enter your Email_ID" required  pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{2,}$"> <br><br>
 
                 Create password : <br><br>
 
                 <input type="password" name="Password" id="password" placeholder="Enter your password" minlength="8" maxlength="10"
                     required class="class1" >
-                    <input type="checkbox" name="showPassword" id="checkbox" onchange="check()">
+                    <input type="checkbox" name="showPassword" id="checkbox" onchange="check()" pattern="[A-Za-z0-9]@$*&#{6,15}$">
 
                     <span id="invalid"></span> <br>
 
                 Confirm password : <br><br>
                 <input type="password" name="password" id="confirmingPassword"
-                    placeholder="Confirm your password" minlength="8" maxlength="10" required >
+                    placeholder="Confirm your password" minlength="8" maxlength="10" required pattern="[A-Za-z0-9]@$*&#{6,15}$">
                      <br><br>
 
                 Enter your DOB : <br><br>
@@ -41,7 +41,7 @@
                 
                 <br><br>
                 Profile name :<br><br>
-                <input type="text" name="txt" id="profileName"  pattern="[A-Za-z0-9]{4,20}" title="Username should only contain mixer of lowercase , uppercase and number .eg : John21. " placeholder="Enter your Profile name" required >
+                <input type="text" name="txt" id="profileName"  pattern="[A-Za-z0-9_.]{3,20}" title="Username should only contain mixer of lowercase , uppercase and number .eg : John21. " placeholder="Enter your Profile name" required >
                  
                 <span class="AllButton">
                     <button class="Button" type="reset"> Reset</button>
@@ -49,6 +49,8 @@
                     <button class="Button" type="submit"> Submit</button>
                 </span>
             </form>
+
+            <P>Already have an account?<a href="./../pages/login.html">Click here</a></P>
         </div>
     </div>
 

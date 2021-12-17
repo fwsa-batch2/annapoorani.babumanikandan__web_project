@@ -4,14 +4,19 @@
   }
   .div1{
       position: relative;
+      
   }
   .nav1{
     background-color: #36454F;
     width: 100%;
     height: 70px;
     margin-top: 0%;
-    position: absolute; 
+    position: static; 
     
+}
+.nav1 ::placeholder{
+    text-align: center;
+    color: whitesmoke;
 }
 .artist{
     position:absolute;
@@ -74,22 +79,23 @@ img:hover{
 .span1{
     color :whitesmoke;
     font-size: 20px;
-    position: fixed;
-    margin-top: 130px;margin-left: 130px;
-    
-    
+    position: absolute;
+    margin-top:5%;
+    margin-left: 130px;   
 }
+
 #id1{ font-size: 40px;
 color: white;
 
 }
 
 .div2{
-   margin-top: 70px;
-   margin-left: 650px;
+   margin-top: 2%;
+   margin-left: 35%;
    width: 80vh;
    position: absolute;
    font-family: arial;
+   /* background-color: lightgreen; */
    text-decoration: none;
    /* background-color: blanchedalmond; */
    
@@ -109,6 +115,7 @@ button:hover{
 } */
 .link{
     color: rgb(250, 67, 0);
+    
 }
 .link:hover{
     color: white;
@@ -118,17 +125,23 @@ button:hover{
     padding: 5px;
     background-color: orangered;
 }
-a:hover{
+/* .nav1.a:hover{
     color:black ;
+      
+} */
+a:hover{
+    /* color:black ; */
+    
+     color: orangered;
 }
 .div3{
    border:solid 3px black ;
-   background-color: #0c0f12;
+   background-color:lightgray; /* #0c0f12*/
   width: 1300px;
   height: 70px;
    margin-right: 250px;
-   margin-left: 250px;
-   margin-top: 800px;
+   margin-left: 350px;
+   margin-top: 760px;
    border-radius: 10px;
    position: fixed; 
 }
@@ -168,8 +181,8 @@ height: 80%;
         height: 150%;}
         
 #helen{
-    width: 150%;
-    height: 150%;
+    width: 100%;
+    height: 100%;
 }
 #bangloredays{
     width: 50%;
@@ -203,3 +216,75 @@ height: 80%;
 ::placeholder{
     color:whitesmoke;
 }
+
+/* .audio{
+    width: 80%;
+    height: 40vh;
+    border-spacing: 10%;
+    margin-top: 1%;
+    position: absolute;
+    background-color: #0c0f12;
+} */
+
+/* .audioList{
+    position: absolute;
+    width: 120%;
+    height: 7vh;
+    background-color: #0c0f12;
+    margin-top: 5%;
+    border-radius: 10px;
+} */
+/* .PTag{
+    color: lightgray;
+    font-size:18px;
+    background-color: lightgreen;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 15%;
+}
+.audioList:hover{
+    border: lightgray 1px solid;
+
+}
+
+.movieImage{
+    width: 7%;
+    height: 7vh;
+    border-radius:5px;
+    margin-left: 0%;
+    position: absolute;
+} */
+/* .musician{
+    font-size: 15px;
+    position: absolute;
+    margin-left: 15%;
+}
+.playButton{
+    position: absolute;
+}
+.playAndPauseButton{
+    width: 3%;
+    height: 4vh;
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 35%;
+}
+#leftArrow{
+    width: 3%;
+    height: 4vh;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 1%;
+    border-spacing: 20%;
+}
+#rightArrow{
+    width: 3%;
+    height: 4vh;
+    position: absolute;
+    border-spacing: 20%;
+    margin-top: 1%;
+    margin-left: 40%;
+}
+.movieName{
+   position: absolute;
+} */

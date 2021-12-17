@@ -6,7 +6,7 @@ body{
     position: relative;
     background-color: #E3E7F1;
     width:80% ;
-    height: 90vh;
+    height: 95vh;
     margin-top: 2%;
     margin-left: 20vh;
     border-radius: 24px;
@@ -21,7 +21,7 @@ body{
 } */
 img{
     position: absolute;
-    height: 90vh;
+    height: 95vh;
     width: 42%;
     border-top-left-radius:24px ;
     border-bottom-left-radius: 24px;

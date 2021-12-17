@@ -1,16 +1,19 @@
 let userDetailsInArray = [];
 
 function onPageLoad() {
+    console.group("onPageLoad")
     let userList = JSON.parse(localStorage.getItem("userDetails"));
-    console.log(userList);
+    console.table(userList);
     if (userList) {
         userDetailsInArray = userList;
     }
+    console.groupEnd("onPageLoad")
 }
 
 function submitHandler() {
     event.preventDefault();
-    let mailId = document.getElementById("mailId").value;
+    console.group("submitHandler")
+    let mailId = document.getElementById("mailId").value.toLowerCase(); 
     let passWord = document.getElementById("password").value;
     let confirmingPassword = document.getElementById("confirmingPassword").value;
     let dateOfBirth = document.getElementById("gettingDOB").value;
@@ -43,7 +46,10 @@ function submitHandler() {
 
     userDetailsInArray.push(userValue);
     const valueInString = JSON.stringify(userDetailsInArray);
+    console.table(valueInString);
     localStorage.setItem("userDetails", valueInString);
+
+    console.groupEnd("submitHandler")
 
     window.location.href = "./musicpage.html";
 }
@@ -51,6 +57,8 @@ function submitHandler() {
 
 
 function validate(mailIdOfUser) {
+
+    console.group("Validate")
 
     let userList = JSON.parse(localStorage.getItem("userDetails"));
     let isExist = false;
@@ -71,11 +79,12 @@ function validate(mailIdOfUser) {
             }
         }
     }
-
+    console.groupEnd("Validate")
     return isExist;
 }
 
 function check(){
+    console.group("check")
     const showPassword = document.getElementById("checkbox");
 
     if(showPassword.checked){
@@ -89,6 +98,7 @@ function check(){
         document.getElementById("confirmingPassword").type = "password";
         // console.log(document.getElementById("password").type = "password");
     }
+    console.groupEnd("check")
 }
 
 onPageLoad();

@@ -12,19 +12,19 @@
     <nav class="nav1">
         <a href="/pages/musicpage.html"> HOME </a> <a href="/pages/download.html"> DOWNLOAD</a>
         <a href="#"> PODCASTS</a>
-        <input type="search" name="search" placeholder="   Search for music you love!">
+        <input type="search" name="search" placeholder="Search for music you love!" id="searchInput" onkeyup="clickHandler()">
         <a href="/pages/signUp.html"> SIGNUP </a>
     </nav>
 
     <div class="div1">
         <!-- <img src="/src/Assets/img/" alt="left arrow"> -->
-        <!-- <img src="./../assets/img/" alt="LeftArrow"> -->
-        <marquee behavior="scroll" direction="left" scrollamount="14"> 
+        <!-- <img src="./../assets/img/left--arrow.png" alt="LeftArrow" class="arrows"> -->
+        <marquee behavior="scroll" direction="left" scrollamount="14">
             <a href="../pages/doctor.html"><img src="./../assets/img/marque1.jpeg" alt="doctor"></a>
             <a href="../pages/annathae.html"><img src="./../assets/img/marque2.jpg" alt="annathae"></a>
             <a href="../pages/loveMocktail.html"><img src="./../assets/img/lmm.jpg" alt="lovemocktail"></a>
             <a href="../pages/kurup.html"><img src="./../assets/img/marque1.jpg" alt="kurup"></a>
-            <a href="../pages/helen.html">   <img src="./../assets/img/marque3.jpg" alt="helen"></a>
+            <a href="../pages/helen.html"> <img src="./../assets/img/marque3.jpg" alt="helen"></a>
             <a href="../pages/jaibhim.html"><img src="./../assets/img/marque4.jpg" alt="jaibhim"></a>
             <a href="../pages/charlie.html"><img src="./../assets/img/marque5.jpg" alt="charlie"></a>
             <a href="../pages/dia.html"><img src="./../assets/img/dia.jpg" alt="dia"></a>
@@ -34,7 +34,10 @@
     </div>
 
     <div class="div2">
-        <div class="div3"> Kollywood Top Hits </div><br>
+        <div class="div3"> Kollywood Top Hits
+
+            <span class="seeMore"> <a href="#" class="SeeMore">More</a></span>
+        </div><br>
         <br>
         <span>
 
@@ -59,11 +62,19 @@
                     alt="sultan"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
             <a href="../pages/abi.html">
-                <img src="./../assets/img/abi1.jpeg" alt="Abiyum Naanum"></a></span>
+                <img src="./../assets/img/abi1.jpeg" alt="Abiyum Naanum"></a>
+
+              <!-- <div class="rightArrow"><img src="./../assets/img/next.png" alt="next" class="rightArrowImg"></div>
+             -->
+             <span class="rightArrow"><img src="./../assets/img/right-Arrow.png" alt="next" class="rightArrowImg"></span>
+        </span>
 
         <br><br><br><br><br><br>
         <span>
-            <div class="div3"> Mollywood Top Hits </div><br><br><br>
+            <div class="div3"> Mollywood Top Hits
+
+                <span class="seeMore"> <a href="#" class="SeeMore">More</a></span>
+            </div><br><br><br>
             <span>
                 <a href="../pages/Premam.html">
                     <img src="./../assets/img/premam.jpeg" alt="Premam">
@@ -83,10 +94,14 @@
                 <a href="../pages/charlie.html">
                     <img src="./../assets/img/charlie.jpeg" alt="charlie">
                 </a>
+                <span class="rightArrow"><img src="./../assets/img/right-Arrow.png" alt="next" class="rightArrowImg"></span>
             </span>
             <br><br><br><br><br><br>
             <span>
-                <div class="div3"> Sandalwood Top Hits </div><br><br><br>
+                <div class="div3"> Sandalwood Top Hits
+
+                    <span class="seeMore"> <a href="#" class="SeeMore">More</a></span>
+                </div><br><br><br>
                 <a href="../pages/loveMocktail.html">
                     <img src="./../assets/img/lm.jpeg" alt="Lovemocktail">
                 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -106,11 +121,14 @@
                 <a href="">
                     <img src="" alt="">
                 </a>
+                <span class="rightArrow"><img src="./../assets/img/right-Arrow.png" alt="next" class="rightArrowImg"></span>
             </span>
 
             <br><br><br><br><br><br>
             <span>
-                <div class="div3"> Tollywood Top Hits </div><br><br><br>
+                <div class="div3"> Tollywood Top Hits
+                    <span class="seeMore"> <a href="#" class="SeeMore">More</a></span>
+                </div><br><br><br>
                 <a href="../pages/geetha.html">
                     <img src="./../assets/img/gg.jpg" alt="Geedha govindham">
                 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -130,12 +148,13 @@
                 <a href="../pages/butta bomma.html">
                     <img src="./../assets/img/bub.jpeg" alt="Butta Bomma">
                 </a>
+                <span class="rightArrow"><img src="./../assets/img/right-Arrow.png" alt="next" class="rightArrowImg"></span>
             </span>
 
 
 
     </div>
-
+    <script src="./../assets/js/music.js"></script>
 </body>
 
 </html>
