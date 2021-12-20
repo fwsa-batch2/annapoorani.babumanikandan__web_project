@@ -37,8 +37,6 @@ function submitHandler() {
 
 
     let validatingEmail = validate(mailId);
-    // console.log(validatingEmail);
-
     if (validatingEmail) {
         alert("This email_Id is already existed!");
         return;
@@ -74,9 +72,9 @@ function validate(mailIdOfUser) {
                 isExist = true;
                 break;
             }
-            else {
-                isExist = false;
-            }
+            // else {
+            //     isExist = false;
+            // }
         }
     }
     console.groupEnd("Validate")
@@ -90,13 +88,13 @@ function check(){
     if(showPassword.checked){
         document.getElementById("password").type = "text";
         document.getElementById("confirmingPassword").type = "text";
-        // console.log(document.getElementById("password").type = "text");
+        
 
     }
     else{
         document.getElementById("password").type = "password";
         document.getElementById("confirmingPassword").type = "password";
-        // console.log(document.getElementById("password").type = "password");
+        
     }
     console.groupEnd("check")
 }

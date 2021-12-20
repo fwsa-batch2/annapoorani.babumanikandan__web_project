@@ -2,11 +2,9 @@ let userDetailsInArray = [];
 
 function onPageLoad() {
     const userDetailList = JSON.parse(localStorage.getItem("userDetails"));
-    // console.log(userDetailList);
     if (userDetailList !== null) {
         userDetailsInArray = userDetailList;
     }
-    // console.log(userDetailsInArray);
 }
 
 
@@ -50,10 +48,10 @@ function isUserDetailExist(userMail, userPassword) {
             isExist = true;
             break;
         }
-        else {
-            isExist = false;
+        // else {
+        //     isExist = false;
 
-        }
+        // }
     }
     return isExist;
 }
@@ -61,7 +59,7 @@ function isUserDetailExist(userMail, userPassword) {
 function checking() {
     const showPassword = document.getElementById("checkbox");
 
-    if (showPassword.checked == true) {
+    if (showPassword.checked) {
         document.getElementById("password").type = "text";
         console.log(document.getElementById("password").type = "text");
 

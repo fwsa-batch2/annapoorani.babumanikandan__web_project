@@ -16,18 +16,18 @@ function playAllSongs(){
     let audio = new Audio("./../assets/audio/Pon-Thaarame-OvaMusic.com_.mp3");
     let audio1 = new Audio("./../assets/audio/Thaarapadhamaake-Mallumusic.info.mp3");
     let audio2 = new Audio("./../assets/audio/Praanante-Kuttyweb.xyz.mp3");
-    let audio3 = new Audio("./../assets/audio/Pon-Thaarame-OvaMusic.com_.mp3");
+    // let audio3 = new Audio("./../assets/audio/Pon-Thaarame-OvaMusic.com_.mp3");
 
 
     if(audio != null){  
     audio.play();
     }
     else if (audio1 != null){
-        // let audio = new Audio("./../assets/audio/Thaarapadhamaake-Mallumusic.info.mp3");
+        
         audio1.play();
     }
     else {
-        // let audio = new Audio("./../assets/audio/Praanante-Kuttyweb.xyz.mp3");
+       
     audio2.play();
     return null;
 
@@ -66,9 +66,9 @@ function fourthSong(){
 
 function firstSong(){
 
-    let firstSong = document.getElementsByClass("helenSongs");
+    let song = document.getElementsByClass("helenSongs");
 
-    if(firstSong.checked){
+    if(song.checked){
         let audio = new Audio("./../assets/audio/Pon-Thaarame-OvaMusic.com_.mp3");
     audio.play();
     }

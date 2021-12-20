@@ -13,12 +13,7 @@ body{
     box-shadow: 10px 10px 50px 
     #9CA6B8;
 }
-/* .imgBox{
-    position: absolute;
-    width: 10%;
-    height: 50vh;
-    background-color: blueviolet;
-} */
+
 img{
     position: absolute;
     height: 95vh;

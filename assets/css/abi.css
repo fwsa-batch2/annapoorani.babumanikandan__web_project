@@ -20,26 +20,47 @@
 }
 .artist{
     position:absolute;
+    width: 20%;
+    height: 40vh;
     margin-top: 450px;
     margin-left: 100px;
+    
     /* background-color: tomato; */
 
 }
-.artist h1{
-    color: whitesmoke;
-    margin-left: 40px;
-}
-.artist img{
-    width: 40%;
-    height: 54%;
+.artistImg{
+    position: absolute;
+    margin-left: 10%;
     border-radius: 1000px;
+    width: auto;
+    
+    height: 7vh;
+    
 }
-.artist img:hover{
+.artistImg:hover{
     opacity: 0.8;
     border-radius: 1000px;
 }
+.artistName{
+    color: whitesmoke;
+    margin-top: 12%;
+    margin-left: 30%;
+}
+h1{
+    color: whitesmoke;
+    margin-left: 10%;
+}
+
+/* .artist img{
+    width: 40%;
+    height: 54%;
+    border-radius: 1000px;
+} */
+/* .artist img:hover{
+    opacity: 0.8;
+    border-radius: 1000px;
+} */
 input{
-    border-radius: 7px;
     margin-top:15px ;
     width: 300px;
     height: 40px;
@@ -61,10 +82,10 @@ input:hover{
     opacity: 0.8;
 }
 
-input:focus{
+/* input:focus{
     width: 350px;
     
-}
+} */
 
 img{
     border-radius: 24px;
@@ -94,7 +115,7 @@ color: white;
    margin-left: 35%;
    width: 80vh;
    position: absolute;
-   font-family: arial;
+   font-family: Arial, Helvetica, sans-serif;
    /* background-color: lightgreen; */
    text-decoration: none;
    /* background-color: blanchedalmond; */
@@ -216,6 +237,7 @@ height: 80%;
 ::placeholder{
     color:whitesmoke;
 }
+
 
 /* .audio{
     width: 80%;
