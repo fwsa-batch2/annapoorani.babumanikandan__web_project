@@ -33,7 +33,7 @@ function renderingMovie() {
         localStorage.setItem("kannadaMovies", "[]");
     }
     console.table(movieListInParse);
-    movieInArray = movieListInParse;
+    kannadaMovieInArray = movieListInParse;
 
 }
 renderingMovie()

@@ -2,9 +2,9 @@ let movieInArray = [];
 
 function renderingMovie() {
 
-    const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
+    const movieListInParse = JSON.parse(localStorage.getItem("teluguMovies"));
     if (movieListInParse == null) {
-        localStorage.setItem("Movies", "[]");
+        localStorage.setItem("teluguMovies", "[]");
     }
     console.table(movieListInParse);
     movieInArray = movieListInParse;
@@ -17,7 +17,7 @@ function renderingMovie() {
 function addingMovieInHtml() {
 
     console.group("addingMovieInHtml");
-    const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
+    const movieListInParse = JSON.parse(localStorage.getItem("teluguMovies"));
 
     console.log(movieListInParse)
 
@@ -39,7 +39,7 @@ function addingMovieInHtml() {
         </div>`
     }
 
-    let allMovies = document.getElementById("moviesList"); //addingMovie
+    let allMovies = document.getElementById("teluguMoviesList"); //addingMovie
     console.log(allMovies);
     allMovies.innerHTML = movies;
 

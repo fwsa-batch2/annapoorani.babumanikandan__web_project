@@ -1,12 +1,12 @@
-let movieInArray = []
+let teluguMovieInArray = []
 
 function addingMovie() {
     event.preventDefault();
-    let movieName = document.getElementById("movieName").value;
+    let movieName = document.getElementById("teluguMovieName").value;
     console.log(movieName);
-    let moviePoster = document.getElementById("moviePoster").value;
+    let moviePoster = document.getElementById("teluguMoviePoster").value;
     console.log(moviePoster);
-    let musicDirector = document.getElementById("musicDirector").value;
+    let musicDirector = document.getElementById("teluguMusicDirector").value;
 
     const movieList = {
         "movieName": movieName,
@@ -14,11 +14,11 @@ function addingMovie() {
         "musicDirector":musicDirector
     }
 
-    movieInArray.push(movieList);
-    console.log(movieInArray);
+    teluguMovieInArray.push(movieList);
+    console.log(teluguMovieInArray);
 
-    const movieListInString = JSON.stringify(movieInArray);
-    localStorage.setItem("Movies", movieListInString);
+    const movieListInString = JSON.stringify(teluguMovieInArray);
+    localStorage.setItem("teluguMovies", movieListInString);
 
 
     renderingMovie();
@@ -28,12 +28,12 @@ function addingMovie() {
 
 function renderingMovie() {
 
-    const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
+    const movieListInParse = JSON.parse(localStorage.getItem("teluguMovies"));
     if (movieListInParse == null) {
-        localStorage.setItem("Movies", "[]");
+        localStorage.setItem("teluguMovies", "[]");
     }
     console.table(movieListInParse);
-    movieInArray = movieListInParse;
+    teluguMovieInArray = movieListInParse;
 
 }
 renderingMovie()
