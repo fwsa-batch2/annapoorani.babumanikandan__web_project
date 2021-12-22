@@ -11,25 +11,39 @@
 
 <body>
     <nav class="nav1">
-        <a href="/pages/musicpage.html"> HOME </a> <a href="/pages/download.html"> DOWNLOAD</a>
+        <a href="./../pages/musicpage.html"> HOME </a> <a href="./../pages/download.html"> DOWNLOAD</a>
         <a href="#"> PODCASTS</a>
-        <input type="search" name="search" placeholder="   Search for music you love!">
-        <a href="/pages/signUp.html"> SIGNUP </a>
+        <input type="search" name="search" placeholder="Search for music you love!" id="searchBar">
+        <!-- <a href="/pages/signUp.html"> SIGNUP </a> -->
     </nav>
-
+    <!-- <div><input type="button" name="addMovies"  value="Add Movie" ></div> -->
     <div class="mainContent">
         <div class="Kollywood">
             <img src="./../assets/img/Kollywood.jpeg" alt="Kollywood hits" id="KollywoodImg">
         </div>
-        <div class="allMovies">
-            <p id="TamilMovies"><strong>Tamil movies</strong></p>
-            <p id="listOfMovies">15 Movies</p>
-            <a href="./../pages/lift.html"><span class="movieList"><img src="./../assets/img/Lift.jpeg" alt="lift"
-                        class="movieImg">
+        <div class="allMovie">
+            <p id="TamilMovies"><strong>Tamil movies</strong></p><a href="./../pages/addingMovie.html"><img
+                    src="./../assets/img/plus-sign.png" alt="addingMovie" id="addMovies"></a>
+            <!-- <p id="listOfMovies">15 Movies</p> -->
+
+
+            <span id="moviesList">
+
+            </span>
+
+            <!-- <a href="./../pages/lift.html"><span class="movieList" id="moviesList">
+                <img src="./../assets/img/Lift.jpeg"alt="lift" class="movieImg">
                     <p class="moviesName"> Lift</p>
                     <p class="musician">Britto Micheal</p>
-                </span></a><br><br><br><br>
-            <a href="./../pages/96.html"> <span class="movieList"><img src="./../assets/img/96.jpeg" alt="96"
+                </span></a><br><br><br><br> -->
+
+            <!-- <a href="./../pages/lift.html"><span class="movieList"><img src="./../assets/img/Lift.jpeg" alt="lift"
+                    class="movieImg">
+                <p class="moviesName"> Lift</p>
+                <p class="musician">Britto Micheal</p>
+            </span></a><br><br><br><br> -->
+
+            <!-- <a href="./../pages/96.html"> <span class="movieList"><img src="./../assets/img/96.jpeg" alt="96"
                         class="movieImg">
                     <p class="moviesName"> 96</p>
                     <p class="musician">Govind vasantha</p>
@@ -78,10 +92,19 @@
                                                         src="./../assets/img/theeran.jpeg" alt="" class="movieImg">
                                                     <p class="moviesName"> theeran adhigaaram ondru</p>
                                                     <p class="musician">M Ghibran</p>
-                                                </span></a>
+                                                </span></a> -->
+
+            <!-- <ul id="myUl">
+
+            </ul> -->
         </div>
+        <!-- <div id="addingMovie">
+
+
+        </div> -->
     </div>
 
+    <script src="./../assets/js/movieList.js"></script>
 </body>
 
 </html>

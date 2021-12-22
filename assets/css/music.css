@@ -12,6 +12,13 @@ body{
 /* .nav1.input{
     color: seashell;
 } */
+#searchIcon{
+    position: absolute;
+    width: 2%;
+    height: 4vh;
+    margin-left: 1%;
+    margin-top: 1%;
+}
 .annathae:hover{
     opacity: 0.8;
 }
