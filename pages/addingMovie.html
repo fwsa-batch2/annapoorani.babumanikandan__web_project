@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,33 @@
     <title>fidaa</title>
     <link rel="stylesheet" href="./../assets/css/addingMovie.css">
 </head>
+
 <body>
     <div class="mainContent">
         <input type="text" placeholder="Add movie name" id="movieName">
-    <input type="text" placeholder="Add movie poster" id="moviePoster"><br><br>
-    <input type="text" placeholder="Enter_Music_Director" id="musicDirector">
+        <input type="text" placeholder="Add movie poster" id="moviePoster">
+        <input type="text" placeholder="Enter_Music_Director" id="musicDirector"><br><br><br>
+        <input type="text" name="" id="firstSongName" placeholder="Enter the 1st song name">
+        <input type="text" name="" id="firstSong" placeholder="Enter the Song Url"><br>
 
-    <input type="button" value="submit" onclick="addingMovie()">
-    <input type="reset" value="Clear">
+        <input type="text" name="" id="secondSongName" placeholder="Enter the 2nd song name">
+        <input type="text" name="" id="secondSong" placeholder="Enter the Song Url"><br>
+
+        <input type="text" name="" id="thirdSongName" placeholder="Enter the 3rd song name">
+        <input type="text" name="" id="thirdSong" placeholder="Enter the Song Url"><br>
+
+        <input type="text" id="artistName" placeholder="Artisit Name">
+        <input type="text" name="artistImg" id="artistImg" placeholder="Artist Image url">
+
+
+
+
+        <input type="button" value="submit" onclick="addingMovie()">
+        <input type="reset" value="Clear">
 
     </div>
 
     <script src="./../assets/js/addMovie.js"></script>
 </body>
+
 </html>

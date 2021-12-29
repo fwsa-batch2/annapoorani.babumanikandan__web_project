@@ -14,6 +14,13 @@ function addingMovie() {
         "musicDirector":musicDirector
     }
 
+    const validatingMovieName = validateMovieName(movieName);
+    if(validatingMovieName){
+        alert("This movie name is already exist!");
+        return;
+    }
+
+
     teluguMovieInArray.push(movieList);
     console.log(teluguMovieInArray);
 
@@ -36,4 +43,22 @@ function renderingMovie() {
     teluguMovieInArray = movieListInParse;
 
 }
-renderingMovie()
+renderingMovie();
+
+function validateMovieName(movieNames){
+
+    const movieListInParse = JSON.parse(localStorage.getItem("teluguMovies"));
+    let isExist = false;
+
+    if(movieListInParse!=null){
+        for(i=0;i<movieListInParse.length;i++){
+            const teluguMovieName = movieListInParse[i].movieName;
+
+            if(movieNames.toLowerCase()==teluguMovieName.toLowerCase()){
+                isExist =true;
+                break;
+            }
+        }
+    }
+    return isExist;
+}

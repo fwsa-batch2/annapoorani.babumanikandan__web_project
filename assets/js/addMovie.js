@@ -7,15 +7,43 @@ function addingMovie() {
     let moviePoster = document.getElementById("moviePoster").value;
     console.log(moviePoster);
     let musicDirector = document.getElementById("musicDirector").value;
+    let firstSongName = document.getElementById("firstSongName").value;
+    console.log(firstSongName);
+
+    let firstSong = document.getElementById("firstSong").value;
+    console.log(firstSong);
+    let secondSongName = document.getElementById("secondSongName").value;
+    let secondSong = document.getElementById("secondSong").value;
+
+    let thirdSongName = document.getElementById("thirdSongName").value;
+    let thirdSong = document.getElementById("thirdSong").value;
+
+    let artistName = document.getElementById("artistName").value;
+    let artistImg = document.getElementById("artistImg").value;
 
     const movieList = {
         "movieName": movieName,
         "moviePoster": moviePoster,
-        "musicDirector":musicDirector
+        "musicDirector":musicDirector,
+        // "songs":movieSongs ,
+        "songs":[{"name":firstSongName,"url":firstSong,"name":secondSongName,"url":secondSong ,"name":thirdSongName,"url":thirdSong}],
+        "artistName":artistName,
+        "artistImg":artistImg 
+    }
+
+    // const movieSongs = Map.set('firstSong',firstSong)
+
+    
+    let validatingMovieName = validateMovieName(movieName);
+    if(validatingMovieName){
+        alert("This movie name is already exist!");
+        return;
     }
 
     movieInArray.push(movieList);
     console.log(movieInArray);
+
+   
 
     const movieListInString = JSON.stringify(movieInArray);
     localStorage.setItem("Movies", movieListInString);
@@ -36,4 +64,33 @@ function renderingMovie() {
     movieInArray = movieListInParse;
 
 }
-renderingMovie()
+renderingMovie();
+
+function validateMovieName(movieNames){
+
+    const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
+    let isExist = false;
+    
+    if(movieListInParse != null){
+    for(i=0;i<movieListInParse.length;i++){
+        const tamilMovieList = movieListInParse[i].movieName;
+
+        if(movieNames.toLowerCase()==tamilMovieList.toLowerCase()){
+            isExist =true;
+            break;
+        }
+
+    }
+
+}
+return isExist;
+}
+
+
+
+// "firstSongName":firstSongName,
+// "firstSong":firstSong,
+// "secondSongName":secondSongName,
+// "secondSong":secondSong,
+// "thirdSongName":thirdSongName,
+// "thirdSong":thirdSong,

@@ -14,6 +14,12 @@ function addingMovie() {
         "musicDirector":musicDirector
     }
 
+    const validatingMovieName = validateMovieName(movieName);
+    if(validatingMovieName){
+        alert("This movie name is already exist!");
+        return;
+    }
+
     kannadaMovieInArray.push(listOfKannadaMovies);
     console.log(kannadaMovieInArray);
 
@@ -36,4 +42,21 @@ function renderingMovie() {
     kannadaMovieInArray = movieListInParse;
 
 }
-renderingMovie()
+renderingMovie();
+
+function validateMovieName(movieNames){
+
+    const movieListInParse = JSON.parse(localStorage.getItem("kannadaMovies"));
+    let isExist = false;
+
+    if( movieListInParse!=null){
+        for(i=0;i< movieListInParse.length;i++){
+            const kannadaMovieList =  movieListInParse[i].movieName;
+            if(movieNames.toLowerCase()==kannadaMovieList.toLowerCase()){
+                isExist=true;
+                break;
+            }
+        }
+    }
+    return isExist;
+}
