@@ -25,7 +25,7 @@ function addingSongs() {
 
     let songs = ''
 
-    for (let i = 0; i < movieListInParse.length; i++) 
+    for (let i of movieListInParse) 
     {
 
         let moviePosters = movieListInParse[i].moviePoster;
@@ -33,11 +33,11 @@ function addingSongs() {
         let artistName = movieListInParse[i].artistName;
         let artistImg = movieListInParse[i].artistImg;
 
-        for (let j = 0; j < movieListInParse.songs.length; j++) {
+        for (let j of movieListInParse.songs) {
             let songName = movieListInParse[i].songs[j];
             let songUrl = movieListInParse[i].songs[j];
         
-      ;
+      
 
 
 
