@@ -8,7 +8,7 @@ function onPageLoad() {
 }
 
 
-function submitHandler() {
+function submitHandler(event) {
     event.preventDefault();
 
 

@@ -24,7 +24,7 @@ function addingMovieInHtml() {
     let len = movieListInParse.length;
     let movies = ''
 
-    for ( i = 0; i < len; i++) {
+    for (let i=0; i<len; i++) {
         let movieNames = movieListInParse[i].movieName;
 
         let moviePosters = movieListInParse[i].moviePoster;

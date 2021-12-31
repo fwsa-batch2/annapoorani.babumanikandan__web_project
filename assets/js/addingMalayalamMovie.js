@@ -1,6 +1,6 @@
 let malayalaMoviesInArray = []
 
-function addingMovie() {
+function addingMovie(event) {
     event.preventDefault();
     let movieName = document.getElementById("malayalamMovieName").value;
     console.log(movieName);
@@ -28,7 +28,7 @@ function addingMovie() {
 
 
     renderingMovie();
-    // addingMovieInHtml();
+    
     window.location.href = "./../pages/moreMalayalamMovies.html"
 }
 
@@ -49,7 +49,7 @@ function validateMovieName(movieNames){
     let isExist=false;
     
     if(movieListInParse!=null){
-        for(i=0;i<movieListInParse.length;i++){
+        for(let i=0;i<movieListInParse.length;i++){
             const malayalaMovieName = movieListInParse[i].movieName;
         
             if(movieNames.toLowerCase()==malayalaMovieName.toLowerCase()){

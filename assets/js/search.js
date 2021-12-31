@@ -1,9 +1,9 @@
 let movieList =[]
-function search(){
+function search(event){
     event.preventDefault();
     let searchInput = document.getElementById("searchInput").value;
 
-    // console.log(searchInput);
+    console.log(searchInput);
     movieList.push(searchInput);
     console.log(movieList);
 

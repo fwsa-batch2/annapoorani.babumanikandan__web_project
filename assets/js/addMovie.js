@@ -25,7 +25,7 @@ function addingMovie(event) {
         "movieName": movieName,
         "moviePoster": moviePoster,
         "musicDirector":musicDirector,
-        "songs":[{"name":firstSongName,"url":firstSong,"name":secondSongName,"url":secondSong ,"name":thirdSongName,"url":thirdSong}],
+        "songs":[{"firstSongName":firstSongName,"firstSongUrl":firstSong,"secondSongName":secondSongName,"secondSongUrl":secondSong ,"thirdSongName":thirdSongName,"thirdSongUrl":thirdSong}],
         "artistName":artistName,
         "artistImg":artistImg 
     }
@@ -47,7 +47,7 @@ function addingMovie(event) {
 
 
     renderingMovie();
-    // addingMovieInHtml();
+    
     window.location.href = "./../pages/moreSongs.html"
 }
 
@@ -69,7 +69,7 @@ function validateMovieName(movieNames){
     let isExist = false;
     
     if(movieListInParse != null){
-    for(i=0;i<movieListInParse.length;i++){
+    for(let i=0;i<movieListInParse.length;i++){
         const tamilMovieList = movieListInParse[i].movieName;
 
         if(movieNames.toLowerCase()==tamilMovieList.toLowerCase()){
@@ -85,9 +85,3 @@ return isExist;
 
 
 
-// "firstSongName":firstSongName,
-// "firstSong":firstSong,
-// "secondSongName":secondSongName,
-// "secondSong":secondSong,
-// "thirdSongName":thirdSongName,
-// "thirdSong":thirdSong,

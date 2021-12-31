@@ -10,7 +10,7 @@ function onPageLoad() {
     console.groupEnd("onPageLoad")
 }
 
-function submitHandler() {
+function submitHandler(event) {
     event.preventDefault();
     console.group("submitHandler")
     let mailId = document.getElementById("mailId").value.toLowerCase(); 

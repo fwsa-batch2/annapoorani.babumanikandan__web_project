@@ -1,6 +1,6 @@
 let teluguMovieInArray = []
 
-function addingMovie() {
+function addingMovie(event) {
     event.preventDefault();
     let movieName = document.getElementById("teluguMovieName").value;
     console.log(movieName);
@@ -29,7 +29,7 @@ function addingMovie() {
 
 
     renderingMovie();
-    // addingMovieInHtml();
+    
     window.location.href = "./../pages/moreTeluguMovies.html"
 }
 
@@ -51,7 +51,7 @@ function validateMovieName(movieNames){
     let isExist = false;
 
     if(movieListInParse!=null){
-        for(i=0;i<movieListInParse.length;i++){
+        for(let i=0;i<movieListInParse.length;i++){
             const teluguMovieName = movieListInParse[i].movieName;
 
             if(movieNames.toLowerCase()==teluguMovieName.toLowerCase()){

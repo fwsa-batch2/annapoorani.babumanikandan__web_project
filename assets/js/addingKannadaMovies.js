@@ -1,6 +1,6 @@
 let kannadaMovieInArray = []
 
-function addingMovie() {
+function addingMovie(event) {
     event.preventDefault();
     let movieName = document.getElementById("kannadaMovieName").value;
     console.log(movieName);
@@ -28,7 +28,7 @@ function addingMovie() {
 
 
     renderingMovie();
-    // addingMovieInHtml();
+    
     window.location.href = "./../pages/moreKannadaMovies.html"
 }
 
@@ -50,7 +50,7 @@ function validateMovieName(movieNames){
     let isExist = false;
 
     if( movieListInParse!=null){
-        for(i=0;i< movieListInParse.length;i++){
+        for(let i=0;i< movieListInParse.length;i++){
             const kannadaMovieList =  movieListInParse[i].movieName;
             if(movieNames.toLowerCase()==kannadaMovieList.toLowerCase()){
                 isExist=true;
