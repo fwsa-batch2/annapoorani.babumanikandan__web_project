@@ -16,7 +16,7 @@ function playAllSongs(){
     let audio = new Audio("./../assets/audio/Pon-Thaarame-OvaMusic.com_.mp3");
     let audio1 = new Audio("./../assets/audio/Thaarapadhamaake-Mallumusic.info.mp3");
     let audio2 = new Audio("./../assets/audio/Praanante-Kuttyweb.xyz.mp3");
-    // let audio3 = new Audio("./../assets/audio/Pon-Thaarame-OvaMusic.com_.mp3");
+    
 
 
     if(audio != null){  

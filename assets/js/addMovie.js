@@ -1,6 +1,6 @@
 let movieInArray = []
 
-function addingMovie() {
+function addingMovie(event) {
     event.preventDefault();
     let movieName = document.getElementById("movieName").value;
     console.log(movieName);
@@ -25,13 +25,10 @@ function addingMovie() {
         "movieName": movieName,
         "moviePoster": moviePoster,
         "musicDirector":musicDirector,
-        // "songs":movieSongs ,
         "songs":[{"name":firstSongName,"url":firstSong,"name":secondSongName,"url":secondSong ,"name":thirdSongName,"url":thirdSong}],
         "artistName":artistName,
         "artistImg":artistImg 
     }
-
-    // const movieSongs = Map.set('firstSong',firstSong)
 
     
     let validatingMovieName = validateMovieName(movieName);
