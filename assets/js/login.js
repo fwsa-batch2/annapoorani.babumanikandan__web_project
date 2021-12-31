@@ -61,12 +61,12 @@ function checking() {
 
     if (showPassword.checked) {
         document.getElementById("password").type = "text";
-        console.log(document.getElementById("password").type = "text");
+        
 
     }
     else {
         document.getElementById("password").type = "password";
-        console.log(document.getElementById("password").type = "password");
+        
     }
 }
 

@@ -50,7 +50,7 @@ function validateMovieName(movieNames){
     let isExist = false;
 
     if( movieListInParse!=null){
-        for(let i=0;i< movieListInParse.length;i++){
+        for(let i of movieListInParse){
             const kannadaMovieList =  movieListInParse[i].movieName;
             if(movieNames.toLowerCase()==kannadaMovieList.toLowerCase()){
                 isExist=true;
