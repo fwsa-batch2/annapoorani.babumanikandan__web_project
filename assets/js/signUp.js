@@ -49,7 +49,7 @@ function submitHandler(event) {
 
     console.groupEnd("submitHandler")
 
-    window.location.href = "./musicpage.html";
+    window.location.href = "./../pages/login.html";
 }
 
 

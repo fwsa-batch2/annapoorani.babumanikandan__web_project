@@ -1,4 +1,4 @@
-let movieInArray = []
+let movieInArray = [];
 
 function addingMovie(event) {
     event.preventDefault();
@@ -25,7 +25,7 @@ function addingMovie(event) {
         "movieName": movieName,
         "moviePoster": moviePoster,
         "musicDirector":musicDirector,
-        "songs":[{"firstSongName":firstSongName,"firstSongUrl":firstSong,"secondSongName":secondSongName,"secondSongUrl":secondSong ,"thirdSongName":thirdSongName,"thirdSongUrl":thirdSong}],
+        "songs":[{"name":firstSongName,"url":firstSong,"name":secondSongName,"url":secondSong ,"name":thirdSongName,"url":thirdSong}],
         "artistName":artistName,
         "artistImg":artistImg 
     }
@@ -63,16 +63,16 @@ function renderingMovie() {
 }
 renderingMovie();
 
-function validateMovieName(movieNames){
+function validateMovieName(movieName){
 
     const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
     let isExist = false;
+    console.log(movieListInParse.movieName);
     
     if(movieListInParse != null){
     for(let i of movieListInParse){
-        const tamilMovieList = movieListInParse[i].movieName;
 
-        if(movieNames.toLowerCase()==tamilMovieList.toLowerCase()){
+        if(movieName.toLowerCase()==tamilMovieList.toLowerCase()){
             isExist =true;
             break;
         }

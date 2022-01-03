@@ -25,27 +25,20 @@ function addingSongs() {
 
     let songs = ''
 
-    for (let i of movieListInParse) 
+    for (let i=0;i<movieListInParse.length;i++) 
     {
 
         let moviePosters = movieListInParse[i].moviePoster;
         let movieNames = movieListInParse[i].movieName;
         let artistName = movieListInParse[i].artistName;
         let artistImg = movieListInParse[i].artistImg;
-
-        for (let j of movieListInParse.songs) {
-            let songName = movieListInParse[i].songs[j];
-            let songUrl = movieListInParse[i].songs[j];
-        
-      
-
-
+        let song = movieListInParse[i].songs;
 
         songs += ` <div class='div1'>
             <span class='span1'>
                 
                 <br><br>
-                <img id='abi' src='${moviePosters}' alt='${movieNames}></span>
+                <img id='abi' src='${moviePosters}' alt='${movieNames}'></span>
     
             <div class='artist'>
                 <span><h1>Artists</h1></span>
@@ -54,19 +47,19 @@ function addingSongs() {
               
             </div>
             <div class='div2'><ul id='myUl'>
-            <li>${songName} </li><br>
+            <li>${song} </li><br>
             <li><audio controls>
-                <source src='${songUrl}' type='audio/mpeg'>
+                <source src='${song}' type='audio/mpeg'>
             </audio><br><br>
             </li></ul>
-            <li>${songName} </li><br>
+            <li>${song} </li><br>
             <li><audio controls>
-            <source src='${songUrl}' type='audio/mpeg'>
+            <source src='${song}' type='audio/mpeg'>
         </audio><br><br>
         </li></ul>
-        <li>${songName} </li><br>
+        <li>${song} </li><br>
         <li><audio controls>
-        <source src='${songUrl}' type='audio/mpeg'>
+        <source src='${song}' type='audio/mpeg'>
     </audio><br><br>
     </li></ul></div>`
 
@@ -79,7 +72,7 @@ function addingSongs() {
     console.log(movieSongs);
 
 }
-}
+
 
 // {
 // name: "",
