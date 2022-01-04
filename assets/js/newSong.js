@@ -27,7 +27,6 @@ function addingSongs() {
 
     for (let i=0;i<movieListInParse.length;i++) 
     {
-
         let moviePosters = movieListInParse[i].moviePoster;
         let movieNames = movieListInParse[i].movieName;
         let artistName = movieListInParse[i].artistName;
@@ -46,23 +45,9 @@ function addingSongs() {
                 <span ><img src='' alt='' class=artistImg> <p class=artistName></p></span>
               
             </div>
-            <div class='div2'><ul id='myUl'>
-            <li>${song} </li><br>
-            <li><audio controls>
-                <source src='${song}' type='audio/mpeg'>
-            </audio><br><br>
-            </li></ul>
-            <li>${song} </li><br>
-            <li><audio controls>
-            <source src='${song}' type='audio/mpeg'>
-        </audio><br><br>
-        </li></ul>
-        <li>${song} </li><br>
-        <li><audio controls>
-        <source src='${song}' type='audio/mpeg'>
-    </audio><br><br>
-    </li></ul></div>`
-
+            <div class='div2'>
+                ${getSongsListHTML(song)}
+            </div>`;
     }
 
     let movieSongs = document.getElementById("mainContent");
@@ -74,14 +59,23 @@ function addingSongs() {
 }
 
 
-// {
-// name: "",
+function getSongsListHTML(songList){
+    let songsHTML = "";
 
-// songs: [
-//     {name: "chellama", url:""},
-//     {name: "theme", url:""},
-//     {name: "", url:""},
-//     {name: "", url:""}
-// ]
+    for(let song of songList){
+        songsHTML += `
+        <ul id='myUl'>
+            <li>
+                ${song.name}
+            </li><br>
+            <li>
+                <audio controls>
+                    <source src='${song.url}' type='audio/mpeg'>
+                </audio><br><br>
+            </li>
+        </ul>
+        `
+    }
 
-// }
+    return songsHTML;
+}
