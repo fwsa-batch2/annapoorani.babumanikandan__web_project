@@ -1,0 +1,317 @@
+
+  body{
+    background-color: #0c0f12;
+}
+.div1{
+    position: relative;
+    
+}
+.nav1{
+  background-color: #36454F;
+  width: 100%;
+  height: 70px;
+  margin-top: 0%;
+  position: static; 
+  
+}
+.nav1 ::placeholder{
+  text-align: center;
+  color: whitesmoke;
+}
+.artist{
+  /* position:absolute; */
+  width: 20%;
+  height: 40vh;
+  margin-top: 450px;
+  margin-left: 100px;
+  
+  /* background-color: tomato; */
+
+}
+.artistImg{
+  /* position: absolute; */
+  margin-left: 10%;
+  border-radius: 1000px;
+  width: auto;
+  
+  height: 7vh;
+  
+}
+.artistImg:hover{
+  opacity: 0.8;
+  border-radius: 1000px;
+}
+.artistName{
+  color: whitesmoke;
+  margin-top: 12%;
+  margin-left: 30%;
+}
+h1{
+  color: whitesmoke;
+  margin-left: 10%;
+}
+
+/* .artist img{
+  width: 40%;
+  height: 54%;
+  border-radius: 1000px;
+} */
+/* .artist img:hover{
+  opacity: 0.8;
+  border-radius: 1000px;
+} */
+input{
+  margin-top:15px ;
+  width: 300px;
+  height: 40px;
+  margin-left: 1000px;
+  border-radius: 24px;
+  background-color: black;
+  color: white;
+  
+}
+a{
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 30px;
+  
+}
+input:hover{
+  opacity: 0.8;
+}
+
+/* input:focus{
+  width: 350px;
+  
+} */
+
+img{
+  border-radius: 24px;
+ 
+}
+
+img:hover{
+  opacity: 0.7;
+  border-radius: 24px;
+}
+
+.span1{
+  color :whitesmoke;
+  font-size: 20px;
+  /* position: absolute; */
+  margin-top:5%;
+  margin-left: 130px;   
+}
+
+#id1{ font-size: 40px;
+color: white;
+
+}
+
+.div2{
+ margin-top: 2%;
+ margin-left: 35%;
+ width: 80vh;
+ position: absolute;
+ font-family: Arial, Helvetica, sans-serif;
+ /* background-color: lightgreen; */
+ text-decoration: none;
+ /* background-color: blanchedalmond; */
+ 
+}
+p{
+  font-size: 20px;
+  color: rgb(170, 170, 170);
+}
+/* button{
+  width:150px;
+  height: 50px;
+  background-color:#0c0f12;
+  border-radius: 24px;
+}
+button:hover{
+  background-color: orangered;
+} */
+.link{
+  color: rgb(250, 67, 0);
+  
+}
+.link:hover{
+  color: white;
+  border: none;
+  border-radius: 24px;
+  /* box-sizing: border-box; */
+  padding: 5px;
+  background-color: orangered;
+}
+/* .nav1.a:hover{
+  color:black ;
+    
+} */
+a:hover{
+  /* color:black ; */
+  
+   color: orangered;
+}
+.div3{
+ border:solid 3px black ;
+ background-color:lightgray; /* #0c0f12*/
+width: 1300px;
+height: 70px;
+ margin-right: 250px;
+ margin-left: 350px;
+ margin-top: 760px;
+ border-radius: 10px;
+ position: fixed; 
+}
+
+li{
+  font-size: 30px;
+  text-decoration:none;
+  color: whitesmoke;
+  list-style: none;
+}
+#abi{
+  width: 90%;
+height: 80%;
+}
+#premam{
+  width: 150%;
+  height: 80%;
+}
+#doctor{
+  width:150% ;
+  height: 150%;
+}
+#annathae{
+  width:150% ;
+  height: 150%;
+}
+#sultan{
+  width:140% ;
+  height: 160%;
+}
+#jaibhim{
+  width:150% ;
+  height: 150%;}
+
+#kurup{
+      width:150% ;
+      height: 150%;}
+      
+#helen{
+  width: 100%;
+  height: 100%;
+}
+#bangloredays{
+  width: 50%;
+  height: 50%;
+  
+}
+#dia{
+  width: 100%;
+  height: 80%;
+}
+#oal{
+  width: 100%;
+  height: 60%;
+}
+#gg{
+  width: 100%;
+  height: 80%;
+}
+#dc{
+  width: 100%;
+  height: 80%;
+}
+#lm{
+  width: 100%;
+  height: 80%;
+}
+#butta{
+  width: 100%;
+  height: 80%;
+}
+::placeholder{
+  color:whitesmoke;
+}
+#mainContent{
+  position: absolute;
+  /* background-color: cornsilk; */
+  width: 100%;
+  height: 100vh;
+}
+
+/* .audio{
+  width: 80%;
+  height: 40vh;
+  border-spacing: 10%;
+  margin-top: 1%;
+  position: absolute;
+  background-color: #0c0f12;
+} */
+
+/* .audioList{
+  position: absolute;
+  width: 120%;
+  height: 7vh;
+  background-color: #0c0f12;
+  margin-top: 5%;
+  border-radius: 10px;
+} */
+/* .PTag{
+  color: lightgray;
+  font-size:18px;
+  background-color: lightgreen;
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 15%;
+}
+.audioList:hover{
+  border: lightgray 1px solid;
+
+}
+
+.movieImage{
+  width: 7%;
+  height: 7vh;
+  border-radius:5px;
+  margin-left: 0%;
+  position: absolute;
+} */
+/* .musician{
+  font-size: 15px;
+  position: absolute;
+  margin-left: 15%;
+}
+.playButton{
+  position: absolute;
+}
+.playAndPauseButton{
+  width: 3%;
+  height: 4vh;
+  position: absolute;
+  margin-top: 1%;
+  margin-left: 35%;
+}
+#leftArrow{
+  width: 3%;
+  height: 4vh;
+  position: absolute;
+  margin-left: 30%;
+  margin-top: 1%;
+  border-spacing: 20%;
+}
+#rightArrow{
+  width: 3%;
+  height: 4vh;
+  position: absolute;
+  border-spacing: 20%;
+  margin-top: 1%;
+  margin-left: 40%;
+}
+.movieName{
+ position: absolute;
+} */

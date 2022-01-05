@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    
+
 
     <div class="MainContent">
         <img src="./../assets/img/musicislife.jpg" alt="musicislife" class="Img">
@@ -18,33 +18,43 @@
 
             <a href="./musicpage.html"><img src="/assets/img/admin.png" alt="admin" id="admin"></a>
 
-            <form onsubmit="submitHandler()">
+            <form onsubmit="submitHandler(event)">
                 <table class="Table">
 
 
                     <tr>
-                        <td>Enter your Email_ID :</td>
+                        <th>Enter your Email_ID :</th>
                     </tr>
                     <tr>
-                        <td><input type="email" id="EmailValue" placeholder="Enter your Email_ID" required></td>
+                        <th><input type="email" id="EmailValue" placeholder="Enter your Email_ID" required></th>
                     </tr>
 
 
                     <tr>
-                        <td> Password : </td>
+                        <th> Password : </th>
                     </tr>
                     <tr>
-                        <td><input type="password" name="password" id="password" placeholder="Password" required
+                        <th><input type="password" name="password" id="password" placeholder="Password" required
                                 minlength="8" maxlength="12">
-                            <input type="checkbox" name="check" id="checkbox" onchange="checking()">
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="check" id="checkbox" onchange="checking()"><span>
+                                Show Password
+                            </span>
                         </td>
                     </tr>
 
                 </table>
-                <button class="allButtons" type="reset">Reset</button>
-                <button class="allButtons" type="submit">Submit</button><br>
-                <br>
-                <p id="invalid"></p>
+
+                <div class="loginButtons">
+                    <input class="allButtons" type="reset" value="Reset">
+                    <input class="allButtons" type="submit" value="Submit"><br>
+                    <br>
+                    <p id="invalid"></p>
+                </div>
 
 
 

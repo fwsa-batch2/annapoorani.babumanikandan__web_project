@@ -17,6 +17,7 @@ function submitHandler(event) {
 
 
     let isDetailExist = isUserDetailExist(userMailId, passWord);
+   
     if (isDetailExist !== true) {
         document.getElementById("invalid").innerText = "Invalid login credentials";
         return null;
@@ -24,8 +25,9 @@ function submitHandler(event) {
     }
     else {
 
-        window.location.href = "./musicpage.html";
         localStorage.setItem("LoggedIn", userMailId);
+        window.location.href = "./../pages/musicpage.html";
+       
     }
 
 
@@ -48,10 +50,7 @@ function isUserDetailExist(userMail, userPassword) {
             isExist = true;
             break;
         }
-        // else {
-        //     isExist = false;
-
-        // }
+        
     }
     return isExist;
 }

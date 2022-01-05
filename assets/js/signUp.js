@@ -16,7 +16,7 @@ function submitHandler(event) {
     let mailId = document.getElementById("mailId").value.toLowerCase(); 
     let passWord = document.getElementById("password").value;
     let confirmingPassword = document.getElementById("confirmingPassword").value;
-    let dateOfBirth = document.getElementById("gettingDOB").value;
+    let dateOfBirth = document.getElementById("DOB").value;
     let profileName = document.getElementById("profileName").value;
 
 

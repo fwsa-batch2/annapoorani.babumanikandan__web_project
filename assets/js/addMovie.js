@@ -70,8 +70,9 @@ function validateMovieName(movieName){
     console.log(movieListInParse.movieName);
     
     if(movieListInParse != null){
-    for(let i of movieListInParse){
+    for(let i=0;i<movieListInParse.length;i++){
 
+        let tamilMovieList =movieListInParse[i].movieName;
         if(movieName.toLowerCase()==tamilMovieList.toLowerCase()){
             isExist =true;
             break;

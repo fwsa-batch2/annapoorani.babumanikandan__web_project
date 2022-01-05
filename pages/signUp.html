@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/assets/img/pngfind.com-music-symbols-png-1040225.png">
     <title>Fidaa</title>
     <link rel="stylesheet" href="../assets/css/signUp.css">
 </head>
@@ -12,43 +13,57 @@
 <body>
 
     <div class="MainContent">
-        
-        <img src="./../assets/img/clippart.jpg" alt="fidaa">
+        <div class="sideDiv">
+            <span>
+                <p id="SignUp"><strong>SignUp</strong></p> <a href="./../pages/musicpage.html"><img
+                        src="./../assets/img/user (3).png" alt="admin" id="admin"></a>
+            </span>
+
+        </div>
 
         <div class="Details">
-          <a href="./musicpage.html">   <img src="/assets/img/admin.png" alt="admin" id="admin"> </a>
+
+            <!-- <a href="./musicpage.html">   <img src="/assets/img/admin.png" alt="admin" id="admin"> </a> -->
+            <!-- <p id="signUp"><strong>SignUp</strong> </p> -->
             <form onsubmit="submitHandler(event)" class="UserDetail">
-                Enter your Email_ID :<br><br> <input type="email" name="email" id="mailId"
-                    placeholder="Enter your Email_ID" required  pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{2,}$"> <br><br>
 
-                Create password : <br><br>
+                <div class="headings"> Enter your Email ID :</div>
+                <div class="allInputs"> <input type="email" name="email" id="mailId" placeholder="Enter your Email_ID"
+                        required pattern="[A-Za-z0-9]+@[a-z]+\.[a-z]{2,}$" autofocus> </div>
 
-                <input type="password" name="Password" id="password" placeholder="Enter your password" minlength="8" maxlength="10"
-                    required class="class1" >
-                    <input type="checkbox" name="showPassword" id="checkbox" onchange="check()" pattern="[A-Za-z0-9]@$*&#{6,15}$">
+                <div class="headings">Create password :</div>
 
-                    <span id="invalid"></span> <br>
+                <div class="allInputs"><input type="password" name="Password" id="password"
+                        placeholder="Enter your password" minlength="8" maxlength="10" required class="class1"></div>
+                <div class="showPassword"><input type="checkbox" name="showPassword" id="checkbox" onchange="check()">
+                    <p id="showPass"> Show Password </p>
+                </div>
 
-                Confirm password : <br><br>
-                <input type="password" name="password" id="confirmingPassword"
-                    placeholder="Confirm your password" minlength="8" maxlength="10" required pattern="[A-Za-z0-9]@$*&#{6,15}$">
-                     <br><br>
+                <span id="invalid"></span>
 
-                Enter your DOB : <br><br>
-                <input type="date" name=""  id="gettingDOB"  max="2010-12-31" min="1940-01-01" >
-                
-                <br><br>
-                Profile name :<br><br>
-                <input type="text" name="txt" id="profileName"  pattern="[A-Za-z0-9_.]{3,20}" title="Username should only contain mixer of lowercase , uppercase and number .eg : John21. " placeholder="Enter your Profile name" required >
-                 
+                <div class="headings">Confirm password : </div>
+                <div class="allInputs"><input type="password" name="confirmPassword" id="confirmingPassword"
+                        placeholder="Confirm your password" minlength="8" maxlength="10" required
+                        pattern="[A-Za-z0-9]@$*&#{6,15}$"></div>
+
+
+                <div class="headings">Enter your DOB : </div>
+                <div><input type="date" name="DOB" id="DOB" max="2010-12-31" min="1940-01-01"></div>
+
+
+                <div class="headings"> Profile Name : </div>
+                <div><input type="text" name="txt" id="profileName" pattern="[A-Za-z0-9_.]{3,20}"
+                        title="Profile name should only contain mixer of lowercase , uppercase and number .eg : John21. "
+                        placeholder="Enter your Profile name" required></div>
+
                 <span class="AllButton">
                     <button class="Button" type="reset"> Reset</button>
-                    
+
                     <button class="Button" type="submit"> Submit</button>
                 </span>
             </form>
 
-            <P>Already have an account?<a href="./../pages/login.html">Click here</a></P>
+            <P id="account">Already have an account?<a href="./../pages/login.html"> Click here</a></P>
         </div>
     </div>
 

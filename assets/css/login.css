@@ -43,13 +43,20 @@ input{
     font-size: 20px;
     margin-left: 10%;
 }
+
+.loginButtons{
+    align-items: center;
+    margin-left: 25%;
+}
  .allButtons{
-    width: 15%;
+    width: 20%;
     height: 5vh;
-    margin-left: 20%;
+    margin-left: 2%;
     margin-top: 5%;
     font-size: 20px;
 }
+
+
 #admin{
     width: 7%;
     height: 5vh;
@@ -70,4 +77,12 @@ input{
 #checkbox{
     width: 5%;
     height: 2vh;
+}
+
+.Table tr th{
+    text-align: start;
+}
+
+.Table td{
+    font-size: 20px;
 }
