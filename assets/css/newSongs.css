@@ -19,7 +19,7 @@
   color: whitesmoke;
 }
 .artist{
-  /* position:absolute; */
+  position:absolute;
   width: 20%;
   height: 40vh;
   margin-top: 450px;
@@ -29,7 +29,7 @@
 
 }
 .artistImg{
-  /* position: absolute; */
+  position: absolute;
   margin-left: 10%;
   border-radius: 1000px;
   width: auto;
@@ -100,7 +100,7 @@ img:hover{
 .span1{
   color :whitesmoke;
   font-size: 20px;
-  /* position: absolute; */
+  position: absolute;
   margin-top:5%;
   margin-left: 130px;   
 }

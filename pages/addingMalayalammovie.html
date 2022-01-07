@@ -1,23 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fidaa</title>
+    <link rel="icon" href="/assets/img/pngfind.com-music-symbols-png-1040225.png">
     <link rel="stylesheet" href="./../assets/css/moreMalayalamMovie.css">
 </head>
+
 <body>
     <div class="mainContent">
         <input type="text" placeholder="Add movie name" id="malayalamMovieName">
-    <input type="text" placeholder="Add movie poster" id="malayalamMoviePoster"><br><br>
-    <input type="text" placeholder="Enter_Music_Director" id="malayalamMusicDirector">
+        <input type="text" placeholder="Add movie poster" id="malayalamMoviePoster">
+        <input type="text" placeholder="Enter_Music_Director" id="malayalamMusicDirector"><br><br>
 
-    <input type="button" value="submit" onclick="addingMovie(event)">
-    <input type="reset" value="Clear">
+        <input type="text" id="firstSongNameOfMm" placeholder="Enter the 1st song name">
+        <input type="text" id="firstSongUrlOfMm" placeholder="Enter the Song Url"><br>
+
+        <input type="text" id="secondSongNameOfMm" placeholder="Enter the 2nd song name">
+        <input type="text" id="secondSongUrlOfMm" placeholder="Enter the Song Url"><br>
+
+        <input type="text" id="thirdSongName" placeholder="Enter the 3rd song name">
+        <input type="text" id="thirdSongUrl" placeholder="Enter the Song Url"><br>
+
+        <input type="text" id="artistName" placeholder="Artisit Name">
+        <input type="text" name="artistImg" id="artistImg" placeholder="Artist Image url"><br><br><br>
+
+
+        <input type="button" value="submit" onclick="addingMovie(event)">
+        <input type="reset" value="Clear">
 
     </div>
 
     <script src="./../assets/js/addingMalayalamMovie.js"></script>
 </body>
+
 </html>

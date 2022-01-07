@@ -19,7 +19,7 @@ function addingMovieInHtml() {
     console.group("addingMovieInHtml");
     const movieListInParse = JSON.parse(localStorage.getItem("MalayalamMovies"));
 
-    console.log(movieListInParse)
+    console.log(movieListInParse);
 
     let len = movieListInParse.length;
     let movies = ''
@@ -32,10 +32,12 @@ function addingMovieInHtml() {
 
         movies +=
             `<div class='addingMovie'>
+            <a href="./storingMalayalamSongs.html?movies=${movieNames}">
         <span class='movieList'><img src="${moviePosters}" alt='${movieNames}' class='movieImg'>
         <p class='moviesName'>${movieNames}</p>"
         <p class='musician'>${musicDirector}</p>
         </span><br><br><br><br>
+        </a>
         </div>`
     }
 

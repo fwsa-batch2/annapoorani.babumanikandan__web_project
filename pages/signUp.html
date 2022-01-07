@@ -34,7 +34,7 @@
                 <div class="headings">Create password :</div>
 
                 <div class="allInputs"><input type="password" name="Password" id="password"
-                        placeholder="Enter your password" minlength="8" maxlength="10" required class="class1"></div>
+                        placeholder="Enter your password" minlength="8" maxlength="10" required class="class1" pattern="[A-Za-z0-9@$*&#]{6,15}$"></div>
                 <div class="showPassword"><input type="checkbox" name="showPassword" id="checkbox" onchange="check()">
                     <p id="showPass"> Show Password </p>
                 </div>
@@ -44,11 +44,11 @@
                 <div class="headings">Confirm password : </div>
                 <div class="allInputs"><input type="password" name="confirmPassword" id="confirmingPassword"
                         placeholder="Confirm your password" minlength="8" maxlength="10" required
-                        pattern="[A-Za-z0-9]@$*&#{6,15}$"></div>
+                        pattern="[A-Za-z0-9@$*&#]{6,15}$"></div>
 
 
                 <div class="headings">Enter your DOB : </div>
-                <div><input type="date" name="DOB" id="DOB" max="2010-12-31" min="1940-01-01"></div>
+                <div><input type="date" name="DOB" id="DOB"></div>
 
 
                 <div class="headings"> Profile Name : </div>
@@ -71,3 +71,5 @@
 </body>
 
 </html>
+
+<!--  max="2010-12-31" min="1940-01-01" -->

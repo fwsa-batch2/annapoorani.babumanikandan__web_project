@@ -8,10 +8,25 @@ function addingMovie(event) {
     console.log(moviePoster);
     let musicDirector = document.getElementById("malayalamMusicDirector").value;
 
+    let firstSongNameOfMm = document.getElementById("firstSongName").value;
+    let firstSong = document.getElementById("firstSongUrl").value;
+    
+    let secondSongNameOfMm = document.getElementById("secondSongName").value;
+    let secondSong = document.getElementById("secondSongUrl").value;
+
+    let thirdSongNameOfMm = document.getElementById("thirdSongName").value;
+    let thirdSong = document.getElementById("thirdSongUrl").value;
+
+    let artistName = document.getElementById("artistName").value;
+    let artistImg = document.getElementById("artistImg").value;
+
     const listOfMalayalamMovies = {
         "movieName": movieName,
         "moviePoster": moviePoster,
-        "musicDirector":musicDirector
+        "musicDirector":musicDirector,
+        "malayalamSong":[{"name":firstSongNameOfMm,"url":firstSong,"name":secondSongNameOfMm,"url":secondSong ,"name":thirdSongNameOfMm,"url":thirdSong}],
+        "artistName":artistName,
+        "artistImg":artistImg
     }
 
     const validatingMovieName = validateMovieName(movieName);
@@ -49,7 +64,7 @@ function validateMovieName(movieNames){
     let isExist=false;
     
     if(movieListInParse!=null){
-        for(let i of movieListInParse){
+        for(let i=0;i<movieListInParse.length;i++){
             const malayalaMovieName = movieListInParse[i].movieName;
         
             if(movieNames.toLowerCase()==malayalaMovieName.toLowerCase()){

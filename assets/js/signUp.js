@@ -1,3 +1,14 @@
+console.group("validateDateOfBirth");
+    let currentYear = new Date().getFullYear();
+    console.log(currentYear);
+    let maxYear = currentYear-10;
+    console.log(maxYear);
+    let maxDate = `${maxYear}-01-01`;
+    document.getElementById("DOB").setAttribute("max", maxDate);
+
+
+    console.groupEnd("validateDateOfBirth");
+
 let userDetailsInArray = [];
 
 function onPageLoad() {
@@ -13,7 +24,7 @@ function onPageLoad() {
 function submitHandler(event) {
     event.preventDefault();
     console.group("submitHandler")
-    let mailId = document.getElementById("mailId").value.toLowerCase(); 
+    let mailId = document.getElementById("mailId").value.toLowerCase();
     let passWord = document.getElementById("password").value;
     let confirmingPassword = document.getElementById("confirmingPassword").value;
     let dateOfBirth = document.getElementById("DOB").value;
@@ -42,6 +53,8 @@ function submitHandler(event) {
         return;
     }
 
+    
+
     userDetailsInArray.push(userValue);
     const valueInString = JSON.stringify(userDetailsInArray);
     console.table(valueInString);
@@ -63,7 +76,7 @@ function validate(mailIdOfUser) {
 
 
     if (userList != null) {
-        for (let i of userList) {
+        for (let i=0;i<userList.length;i++) {
 
             const userDetailList = userList[i];
             const userEmail = userDetailList.mailId;
@@ -72,29 +85,27 @@ function validate(mailIdOfUser) {
                 isExist = true;
                 break;
             }
-            // else {
-            //     isExist = false;
-            // }
+
         }
     }
     console.groupEnd("Validate")
     return isExist;
 }
 
-function check(){
+function check() {
     console.group("check")
     const showPassword = document.getElementById("checkbox");
 
-    if(showPassword.checked){
+    if (showPassword.checked) {
         document.getElementById("password").type = "text";
         document.getElementById("confirmingPassword").type = "text";
-        
+
 
     }
-    else{
+    else {
         document.getElementById("password").type = "password";
         document.getElementById("confirmingPassword").type = "password";
-        
+
     }
     console.groupEnd("check")
 }
@@ -102,6 +113,8 @@ function check(){
 onPageLoad();
 
 
+
+    
 
 
 
