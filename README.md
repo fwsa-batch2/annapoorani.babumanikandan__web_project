@@ -32,4 +32,7 @@
 
 ### LIST OF SONGS
 
-#### ON PROGRESS 
+* The details given by the admin in the movie adding page is showed in the movie listing page 
+* The details are fetched from the localstorage and it is shown in the new songs page .
+  ( The details are movie name,songs,artist image, artist name)
+
