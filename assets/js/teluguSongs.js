@@ -1,13 +1,13 @@
 const currentUrl = window.location.search
 const urlParam = new URLSearchParams(currentUrl);
-const movieName = urlParam.get("movie");
+const movieName = urlParam.get("movies");
 
 console.log(movieName);
 
 
 function getMovieDetails(name) {
 
-    const movieList = JSON.parse(localStorage.getItem("Movies"));
+    const movieList = JSON.parse(localStorage.getItem("teluguMovies"));
     console.log(movieList);
 
     const movie = movieList.find(element => element.movieName == name);
@@ -23,32 +23,23 @@ function addingSongs() {
 
     const currentUrl = window.location.search;
     const urlParams = new URLSearchParams(currentUrl);
-    const movieNames = urlParams.get("movie");
+    const kannadaMovieName = urlParams.get("movies");
 
-
-
-
-    const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
+    const movieListInParse = JSON.parse(localStorage.getItem("teluguMovies"));
 
     let songs = ''
 
-    const movie = movieListInParse.filter(movies => movies.movieName == movieNames);
+    const movie = movieListInParse.filter(movies => movies.movieName == kannadaMovieName);
     console.group("movie");
     console.log(movie);
     console.groupEnd("movie");
-    const movieSong = movie[0].songs;
+    const movieSong = movie[0].teluguSong;
     const movieName = movie[0].movieName;
     const moviePosters = movie[0].moviePoster;
     const artistImg = movie[0].artistImg;
     const artistName = movie[0].artistName;
 
-    // for (let i=0;i<movieListInParse.length;i++) 
-    // {
-    //     let moviePosters = movieListInParse[i].moviePoster;
-    //     let movieNames = movieListInParse[i].movieName;
-    //     let artistName = movieListInParse[i].artistName;
-    //     let artistImg = movieListInParse[i].artistImg;
-    //     let song = movieListInParse[i].songs;
+    
 
     songs += ` <div class='div1'>
             <span class='span1'>
@@ -63,9 +54,9 @@ function addingSongs() {
               
             </div>
             <div class='div2'>
-                ${getSongsListHTML(movieSong)}
+                ${getSongsListHTML(movieSong)};
             </div>`;
-    // }
+    
 
     let movieSongs = document.getElementById("mainContent");
     console.log(movieSongs);
@@ -79,7 +70,7 @@ function addingSongs() {
 function getSongsListHTML(songList) {
     let songsHTML = "";
 
-    for (let song of songList) {
+    for (let song of songList){
         songsHTML += `
         <ul id='myUl'>
             <li>
@@ -90,7 +81,6 @@ function getSongsListHTML(songList) {
                     <source src='${song.url}' type='audio/mpeg'>
                 </audio><br><br>
             </li>
-            
         </ul>
         `
     }

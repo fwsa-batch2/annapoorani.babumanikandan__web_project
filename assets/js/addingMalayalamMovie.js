@@ -8,23 +8,23 @@ function addingMovie(event) {
     console.log(moviePoster);
     let musicDirector = document.getElementById("malayalamMusicDirector").value;
 
-    let firstSongNameOfMm = document.getElementById("firstSongName").value;
-    let firstSong = document.getElementById("firstSongUrl").value;
+    let firstSongNameOfMm = document.getElementById("firstSongNameOfMm").value;
+    let firstSongUrl = document.getElementById("firstSongUrlOfMm").value;
     
-    let secondSongNameOfMm = document.getElementById("secondSongName").value;
-    let secondSong = document.getElementById("secondSongUrl").value;
+    let secondSongNameOfMm = document.getElementById("secondSongNameOfMm").value;
+    let secondSongUrl = document.getElementById("secondSongUrlOfMm").value;
 
-    let thirdSongNameOfMm = document.getElementById("thirdSongName").value;
-    let thirdSong = document.getElementById("thirdSongUrl").value;
+    let thirdSongNameOfMm = document.getElementById("thirdSongNameOfMm").value;
+    let thirdSongUrl = document.getElementById("thirdSongUrlOfMm").value;
 
-    let artistName = document.getElementById("artistName").value;
-    let artistImg = document.getElementById("artistImg").value;
+    let artistName = document.getElementById("artistNameOfMm").value;
+    let artistImg = document.getElementById("artistImgOfMm").value;
 
     const listOfMalayalamMovies = {
         "movieName": movieName,
         "moviePoster": moviePoster,
         "musicDirector":musicDirector,
-        "malayalamSong":[{"name":firstSongNameOfMm,"url":firstSong,"name":secondSongNameOfMm,"url":secondSong ,"name":thirdSongNameOfMm,"url":thirdSong}],
+        "malayalamSong":[{"name":firstSongNameOfMm,"url":firstSongUrl,"name":secondSongNameOfMm,"url":secondSongUrl ,"name":thirdSongNameOfMm,"url":thirdSongUrl}],
         "artistName":artistName,
         "artistImg":artistImg
     }

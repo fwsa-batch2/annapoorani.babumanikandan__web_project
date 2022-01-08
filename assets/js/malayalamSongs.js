@@ -23,7 +23,7 @@ function addingSongs() {
 
     const currentUrl = window.location.search;
     const urlParams = new URLSearchParams(currentUrl);
-    const malayalamMovieName = urlParam.get("movies");
+    const malayalamMovieName = urlParams.get("movies");
 
     const movieListInParse = JSON.parse(localStorage.getItem("MalayalamMovies"));
 
@@ -31,7 +31,7 @@ function addingSongs() {
 
     const movie = movieListInParse.filter(movies => movies.movieName == malayalamMovieName );
     console.group("movie");
-    console.log(movie)
+    console.log(movie);
     console.groupEnd("movie");
     const movieSong = movie[0].malayalamSong;
     const movieName = movie[0].movieName;
@@ -54,7 +54,7 @@ function addingSongs() {
               
             </div>
             <div class='div2'>
-                ${getSongsListHTML(movieSong)}
+                ${getSongsListHTML(movieSong)};
             </div>`;
     
 

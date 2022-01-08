@@ -26,12 +26,12 @@ function addingMovieInHtml() {
 
     for (let i=0; i<len; i++) {
         let movieNames = movieListInParse[i].movieName;
-
         let moviePosters = movieListInParse[i].moviePoster;
         let musicDirector = movieListInParse[i].musicDirector;
 
         movies +=
             `<div class='addingMovie'>
+            <a href="./storingKannadaSongs.html?movies=${movieNames}">
         <span class='movieList'><img src="${moviePosters}" alt='${movieNames}' class='movieImg'>
         <p class='moviesName'>${movieNames}</p>"
         <p class='musician'>${musicDirector}</p>
@@ -39,7 +39,7 @@ function addingMovieInHtml() {
         </div>`
     }
 
-    let allMovies = document.getElementById("kannadaMovieList"); //addingMovie
+    let allMovies = document.getElementById("kannadaMovieList"); 
     console.log(allMovies);
     allMovies.innerHTML = movies;
 

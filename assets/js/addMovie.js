@@ -7,16 +7,17 @@ function addingMovie(event) {
     let moviePoster = document.getElementById("moviePoster").value;
     console.log(moviePoster);
     let musicDirector = document.getElementById("musicDirector").value;
+
     let firstSongName = document.getElementById("firstSongName").value;
     console.log(firstSongName);
 
-    let firstSong = document.getElementById("firstSong").value;
-    console.log(firstSong);
+    let firstSongUrl = document.getElementById("firstSongUrl").value;
+    console.log(firstSongUrl);
     let secondSongName = document.getElementById("secondSongName").value;
-    let secondSong = document.getElementById("secondSong").value;
+    let secondSongUrl = document.getElementById("secondSongUrl").value;
 
     let thirdSongName = document.getElementById("thirdSongName").value;
-    let thirdSong = document.getElementById("thirdSong").value;
+    let thirdSongUrl = document.getElementById("thirdSongUrl").value;
 
     let artistName = document.getElementById("artistName").value;
     let artistImg = document.getElementById("artistImg").value;
@@ -25,7 +26,9 @@ function addingMovie(event) {
         "movieName": movieName,
         "moviePoster": moviePoster,
         "musicDirector":musicDirector,
-        "songs":[{"name":firstSongName,"url":firstSong,"name":secondSongName,"url":secondSong ,"name":thirdSongName,"url":thirdSong}],
+        "songs":[{"name":firstSongName,"url":firstSongUrl,
+        "name":secondSongName,"url":secondSongUrl ,
+        "name":thirdSongName,"url":thirdSongUrl}],
         "artistName":artistName,
         "artistImg":artistImg 
     }

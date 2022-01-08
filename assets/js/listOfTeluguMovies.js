@@ -32,6 +32,7 @@ function addingMovieInHtml() {
 
         movies +=
             `<div class='addingMovie'>
+            <a href="./storingTeluguSongs.html?movies=${movieNames}">
         <span class='movieList'><img src="${moviePosters}" alt='${movieNames}' class='movieImg'>
         <p class='moviesName'>${movieNames}</p>"
         <p class='musician'>${musicDirector}</p>

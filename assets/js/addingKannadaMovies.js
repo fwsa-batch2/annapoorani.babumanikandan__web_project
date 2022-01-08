@@ -7,11 +7,26 @@ function addingMovie(event) {
     let moviePoster = document.getElementById("kannadaMoviePoster").value;
     console.log(moviePoster);
     let musicDirector = document.getElementById("kannadaMusicDirector").value;
+    let firstSongNameOfKm = document.getElementById("firstSongNameOfKm").value;
+    let firstSongUrl = document.getElementById("firstSongUrlOfKm").value;
+    
+    let secondSongNameOfKm = document.getElementById("secondSongNameOfKm").value;
+    let secondSongUrl = document.getElementById("secondSongUrlOfKm").value;
+
+    let thirdSongNameOfKm = document.getElementById("thirdSongNameOfKm").value;
+    let thirdSongUrl = document.getElementById("thirdSongUrlOfKm").value;
+
+    let artistName = document.getElementById("artistNameOfKm").value;
+    let artistImg = document.getElementById("artistImgOfKm").value;
+
 
     const listOfKannadaMovies = {
         "movieName": movieName,
         "moviePoster": moviePoster,
-        "musicDirector":musicDirector
+        "musicDirector":musicDirector,
+        "KannadaSong":[{"name":firstSongNameOfKm,"url":firstSongUrl,"name":secondSongNameOfKm,"url":secondSongUrl ,"name":thirdSongNameOfKm,"url":thirdSongUrl}],
+        "artistName":artistName,
+        "artistImg":artistImg
     }
 
     const validatingMovieName = validateMovieName(movieName);
