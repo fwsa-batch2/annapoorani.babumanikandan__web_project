@@ -83,15 +83,32 @@ function getSongsListHTML(songList) {
         songsHTML += `
         <ul id='myUl'>
             <li>
-                ${song.name}
+                ${song.nameOfFirstSong}
             </li><br>
             <li>
                 <audio controls>
-                    <source src='${song.url}' type='audio/mpeg'>
+                    <source src='${song.urlOfFirstSong}' type='audio/mpeg'>
+                </audio><br><br>
+            </li>
+            <li>
+                ${song.nameOfSecondSong}
+            </li><br>
+            <li>
+                <audio controls>
+                    <source src='${song.urlOfSecondSong}' type='audio/mpeg'>
+                </audio><br><br>
+            </li>
+            <li>
+                ${song.nameOfThirdSong}
+            </li><br>
+            <li>
+                <audio controls>
+                    <source src='${song.urlOfThirdSong}' type='audio/mpeg'>
                 </audio><br><br>
             </li>
             
         </ul>
+        
         `
     }
 

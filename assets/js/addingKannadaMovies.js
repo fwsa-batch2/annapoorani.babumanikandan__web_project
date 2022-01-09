@@ -24,7 +24,9 @@ function addingMovie(event) {
         "movieName": movieName,
         "moviePoster": moviePoster,
         "musicDirector":musicDirector,
-        "KannadaSong":[{"name":firstSongNameOfKm,"url":firstSongUrl,"name":secondSongNameOfKm,"url":secondSongUrl ,"name":thirdSongNameOfKm,"url":thirdSongUrl}],
+        "KannadaSong":[{"nameOfFirstSong":firstSongNameOfKm,"urlOfFirstSong":firstSongUrl,
+        "nameOfSecondSong":secondSongNameOfKm,"urlOfSecondSong":secondSongUrl ,
+        "nameOfThirdSong":thirdSongNameOfKm,"urlOfThirdSong":thirdSongUrl}],
         "artistName":artistName,
         "artistImg":artistImg
     }
@@ -65,7 +67,7 @@ function validateMovieName(movieNames){
     let isExist = false;
 
     if( movieListInParse!=null){
-        for(let i of movieListInParse){
+        for(let i=0;i<movieListInParse.length;i++){
             const kannadaMovieList =  movieListInParse[i].movieName;
             if(movieNames.toLowerCase()==kannadaMovieList.toLowerCase()){
                 isExist=true;
