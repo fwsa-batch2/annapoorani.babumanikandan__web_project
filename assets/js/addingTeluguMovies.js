@@ -69,7 +69,8 @@ function validateMovieName(movieNames){
     let isExist = false;
 
     if(movieListInParse!=null){
-        for(let i=0; i<movieListInParse.length;i++){
+        let len =movieListInParse.length;
+        for(let i=0; i<len;i++){
             const teluguMovieName = movieListInParse[i].movieName;
 
             if(movieNames.toLowerCase()==teluguMovieName.toLowerCase()){

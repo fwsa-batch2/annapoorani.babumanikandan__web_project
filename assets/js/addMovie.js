@@ -74,7 +74,8 @@ function validateMovieName(movieName){
     console.log(movieListInParse.movieName);
     
     if(movieListInParse != null){
-    for(let i=0;i<movieListInParse.length;i++){
+        let len =movieListInParse.length;
+    for(let i=0;i<len;i++){
 
         let tamilMovieList =movieListInParse[i].movieName;
         if(movieName.toLowerCase()==tamilMovieList.toLowerCase()){
