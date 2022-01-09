@@ -21,8 +21,8 @@ getMovieDetails(movieName);
 
 function addingSongs() {
 
-    const currentUrl = window.location.search;
-    const urlParams = new URLSearchParams(currentUrl);
+    const currentUrlOfPage = window.location.search;
+    const urlParams = new URLSearchParams(currentUrlOfPage);
     const movieNames = urlParams.get("movie");
 
 
@@ -37,24 +37,18 @@ function addingSongs() {
     console.log(movie);
     console.groupEnd("movie");
     const movieSong = movie[0].songs;
-    const movieName = movie[0].movieName;
+    const movieNameOfTm = movie[0].movieName;
     const moviePosters = movie[0].moviePoster;
     const artistImg = movie[0].artistImg;
     const artistName = movie[0].artistName;
 
-    // for (let i=0;i<movieListInParse.length;i++) 
-    // {
-    //     let moviePosters = movieListInParse[i].moviePoster;
-    //     let movieNames = movieListInParse[i].movieName;
-    //     let artistName = movieListInParse[i].artistName;
-    //     let artistImg = movieListInParse[i].artistImg;
-    //     let song = movieListInParse[i].songs;
+    
 
     songs += ` <div class='div1'>
             <span class='span1'>
                 
                 <br><br>
-                <img id='abi' src='${moviePosters}' alt='${movieName}'></span>
+                <img id='abi' src='${moviePosters}' alt='${movieNameOfTm}'></span>
     
             <div class='artist'>
                 <span><h1>Artists</h1></span>

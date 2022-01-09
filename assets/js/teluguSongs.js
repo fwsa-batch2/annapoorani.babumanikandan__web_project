@@ -21,8 +21,8 @@ getMovieDetails(movieName);
 
 function addingSongs() {
 
-    const currentUrl = window.location.search;
-    const urlParams = new URLSearchParams(currentUrl);
+    const currentUrlOfPage = window.location.search;
+    const urlParams = new URLSearchParams(currentUrlOfPage);
     const kannadaMovieName = urlParams.get("movies");
 
     const movieListInParse = JSON.parse(localStorage.getItem("teluguMovies"));
@@ -34,7 +34,7 @@ function addingSongs() {
     console.log(movie);
     console.groupEnd("movie");
     const movieSong = movie[0].teluguSong;
-    const movieName = movie[0].movieName;
+    const movieNameOfTm = movie[0].movieName;
     const moviePosters = movie[0].moviePoster;
     const artistImg = movie[0].artistImg;
     const artistName = movie[0].artistName;
@@ -45,7 +45,7 @@ function addingSongs() {
             <span class='span1'>
                 
                 <br><br>
-                <img id='abi' src='${moviePosters}' alt='${movieName}'></span>
+                <img id='abi' src='${moviePosters}' alt='${movieNameOfTm}'></span>
     
             <div class='artist'>
                 <span><h1>Artists</h1></span>
