@@ -1,4 +1,4 @@
-const currentUrl = window.location.search
+const currentUrl = window.location.search;
 const urlParam = new URLSearchParams(currentUrl);
 const movieName = urlParam.get("movie");
 
