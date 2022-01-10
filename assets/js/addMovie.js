@@ -54,7 +54,7 @@ function addingMovie(event) {
 
     renderingMovie();
 
-    // window.location.href = "./../pages/moreSongs.html"
+    window.location.href = "./../pages/moreSongs.html"
 }
 
 function renderingMovie() {

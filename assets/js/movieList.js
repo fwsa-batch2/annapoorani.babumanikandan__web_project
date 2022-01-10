@@ -48,7 +48,7 @@ function addingMovieInHtml() {
 
     console.log(allMovies.innerHTML);
    
-    console.groupEnd("addingMovieInHtml")
+    console.groupEnd("addingMovieInHtml");
 }
 
 renderingMovie();

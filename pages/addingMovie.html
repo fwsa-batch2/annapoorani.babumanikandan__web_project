@@ -18,20 +18,20 @@
         </span>
         <div class="allInputs">
             <p id="addingTamilSongs">Adding Tamil Songs</p>
-        <input type="text" placeholder="Add movie name" id="movieName">
-        <input type="text" placeholder="Add movie poster" id="moviePoster">
-        <input type="text" placeholder="Enter_Music_Director" id="musicDirector"><br><br><br>
-        <input type="text" id="firstSongName" placeholder="Enter the 1st song name">
-        <input type="text" id="firstSongUrl" placeholder="Enter the Song Url"><br>
+        <input type="text" placeholder="Add movie name" id="movieName" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+        <input type="text" placeholder="Add movie poster" id="moviePoster" required >
+        <input type="text" placeholder="Enter_Music_Director" id="musicDirector" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"><br><br><br>
+        <input type="text" id="firstSongName" placeholder="Enter the 1st song name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+        <input type="text" id="firstSongUrl" placeholder="Enter the Song Url" required ><br>
 
-        <input type="text" id="secondSongName" placeholder="Enter the 2nd song name">
-        <input type="text" id="secondSongUrl" placeholder="Enter the Song Url"><br>
+        <input type="text" id="secondSongName" placeholder="Enter the 2nd song name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+        <input type="text" id="secondSongUrl" placeholder="Enter the Song Url" required ><br>
 
-        <input type="text" id="thirdSongName" placeholder="Enter the 3rd song name">
-        <input type="text" id="thirdSongUrl" placeholder="Enter the Song Url"><br>
+        <input type="text" id="thirdSongName" placeholder="Enter the 3rd song name" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+        <input type="text" id="thirdSongUrl" placeholder="Enter the Song Url" ><br>
 
-        <input type="text" id="artistName" placeholder="Artisit Name">
-        <input type="text" name="artistImg" id="artistImg" placeholder="Artist Image url">
+        <input type="text" id="artistName" placeholder="Artisit Name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+        <input type="text" name="artistImg" id="artistImg" placeholder="Artist Image url" required >
 
 
 
