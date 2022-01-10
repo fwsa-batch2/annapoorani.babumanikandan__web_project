@@ -24,9 +24,9 @@ function addingMovie(event) {
         "movieName": movieName,
         "moviePoster": moviePoster,
         "musicDirector":musicDirector,
-        "malayalamSong":[{"nameOfFirstSong":firstSongNameOfMm,"urlOfFirstSong":firstSongUrl,
-        "nameOfSecondSong":secondSongNameOfMm,"urlOfSecondSong":secondSongUrl ,
-        "nameOfThirdSong":thirdSongNameOfMm,"urlOfThirdSong":thirdSongUrl}],
+        "malayalamSong":[{"name":firstSongNameOfMm,"url":firstSongUrl},
+        {"name":secondSongNameOfMm,"url":secondSongUrl} ,
+        {"name":thirdSongNameOfMm,"url":thirdSongUrl}],
         "artistName":artistName,
         "artistImg":artistImg
     }

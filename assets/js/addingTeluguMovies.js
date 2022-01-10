@@ -24,9 +24,9 @@ function addingMovie(event) {
         "movieName": movieName,
         "moviePoster": moviePoster,
         "musicDirector":musicDirector,
-        "teluguSong":[{"nameOfFirstSong":firstSongNameOfTm,"urlOfFirstSong":firstSongUrl,
-        "nameOfSecondSong":secondSongNameOfTm,"urlOfSecondSong":secondSongUrl ,
-        "nameOfThirdSong":thirdSongNameOfTm,"urlOfThirdSong":thirdSongUrl}],
+        "teluguSong":[{"name":firstSongNameOfTm,"url":firstSongUrl},
+        {"name":secondSongNameOfTm,"url":secondSongUrl} ,
+        {"name":thirdSongNameOfTm,"url":thirdSongUrl}],
         "artistName":artistName,
         "artistImg":artistImg
 

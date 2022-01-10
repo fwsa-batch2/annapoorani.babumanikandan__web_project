@@ -24,6 +24,7 @@ function addingSongs() {
     const currentUrlOfPage = window.location.search;
     const urlParams = new URLSearchParams(currentUrlOfPage);
     const movieNames = urlParams.get("movie");
+    console.log(movieNames);
 
 
 
@@ -37,6 +38,7 @@ function addingSongs() {
     console.log(movie);
     console.groupEnd("movie");
     const movieSong = movie[0].songs;
+    console.log(movieSong);
     const movieNameOfTm = movie[0].movieName;
     const moviePosters = movie[0].moviePoster;
     const artistImg = movie[0].artistImg;
@@ -77,30 +79,14 @@ function getSongsListHTML(songList) {
         songsHTML += `
         <ul id='myUl'>
             <li>
-                ${song.nameOfFirstSong}
+                ${song.name}
             </li><br>
             <li>
                 <audio controls>
-                    <source src='${song.urlOfFirstSong}' type='audio/mpeg'>
+                    <source src='${song.url}' type='audio/mpeg'>
                 </audio><br><br>
             </li>
-            <li>
-                ${song.nameOfSecondSong}
-            </li><br>
-            <li>
-                <audio controls>
-                    <source src='${song.urlOfSecondSong}' type='audio/mpeg'>
-                </audio><br><br>
-            </li>
-            <li>
-                ${song.nameOfThirdSong}
-            </li><br>
-            <li>
-                <audio controls>
-                    <source src='${song.urlOfThirdSong}' type='audio/mpeg'>
-                </audio><br><br>
-            </li>
-            
+           
         </ul>
         
         `
@@ -108,3 +94,20 @@ function getSongsListHTML(songList) {
 
     return songsHTML;
 }
+
+{/* <li>
+${song.nameOfSecondSong}
+</li><br>
+<li>
+<audio controls>
+    <source src='${song.urlOfSecondSong}' type='audio/mpeg'>
+</audio><br><br>
+</li>
+<li>
+${song.nameOfThirdSong}
+</li><br>
+<li>
+<audio controls>
+    <source src='${song.urlOfThirdSong}' type='audio/mpeg'>
+</audio><br><br>
+</li> */}

@@ -26,17 +26,19 @@ function addingMovie(event) {
     const movieList = {
         "movieName": movieName,
         "moviePoster": moviePoster,
-        "musicDirector":musicDirector,
-        "songs":[{"nameOfFirstSong":firstSongName,"urlOfFirstSong":firstSongUrl,
-        "nameOfSecondSong":secondSongName,"urlOfSecondSong":secondSongUrl ,
-        "nameOfThirdSong":thirdSongName,"urlOfThirdSong":thirdSongUrl}],
-        "artistName":artistName,
-        "artistImg":artistImg 
+        "musicDirector": musicDirector,
+        "songs": [
+            { "name": firstSongName, "url": firstSongUrl },
+            { "name": secondSongName, "url": secondSongUrl },
+            { "name": thirdSongName, "url": thirdSongUrl }
+        ],
+        "artistName": artistName,
+        "artistImg": artistImg
     }
 
-    
+
     let validatingMovieName = validateMovieName(movieName);
-    if(validatingMovieName){
+    if (validatingMovieName) {
         alert("This movie name is already exist!");
         return;
     }
@@ -44,15 +46,15 @@ function addingMovie(event) {
     movieInArray.push(movieList);
     console.log(movieInArray);
 
-   
+
 
     const movieListInString = JSON.stringify(movieInArray);
     localStorage.setItem("Movies", movieListInString);
 
 
     renderingMovie();
-    
-    window.location.href = "./../pages/moreSongs.html"
+
+    // window.location.href = "./../pages/moreSongs.html"
 }
 
 function renderingMovie() {
@@ -67,26 +69,26 @@ function renderingMovie() {
 }
 renderingMovie();
 
-function validateMovieName(movieName){
+function validateMovieName(movieName) {
 
     const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
     let isExist = false;
-    console.log(movieListInParse.movieName);
     
-    if(movieListInParse != null){
-        let len =movieListInParse.length;
-    for(let i=0;i<len;i++){
 
-        let tamilMovieList =movieListInParse[i].movieName;
-        if(movieName.toLowerCase()==tamilMovieList.toLowerCase()){
-            isExist =true;
-            break;
+    if (movieListInParse != null) {
+        let len = movieListInParse.length;
+        for (let i = 0; i < len; i++) {
+
+            let tamilMovieList = movieListInParse[i].movieName;
+            if (movieName.toLowerCase() == tamilMovieList.toLowerCase()) {
+                isExist = true;
+                break;
+            }
+
         }
 
     }
-
-}
-return isExist;
+    return isExist;
 }
 
 
