@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     background-color:#0c0f12;
     overflow-x: hidden;
@@ -158,40 +163,28 @@ a:hover{
 }
 
 #marque{
-    width: 100%;
+    width: 500%;
     height: 40vh;
-    background-color: blue;
 }
-#marqueImg{
-    position: absolute;
-    /* margin-left: 20%; */
-    
-}
-#marqueImg1{
-    position: absolute;
-    margin-left: 45%;
-    
-}
-
-
 #marque a{
-    display: flex;
+    display: inline-block;
 }
 
-/* #marque{
+#marque{
     animation-name: marquee;
     animation-delay: 0s;
-    animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-duration: 40s;
     animation-fill-mode: forwards;
+    animation-timing-function: linear;
 }
 
 @keyframes marquee{
     from{
-        transform: translateX(100%);
+    transform: translateX(25%);
     }
     
     to{
-        transform: translateX(-100%);
+    transform: translateX(-75%);
     }
-} */
+}
