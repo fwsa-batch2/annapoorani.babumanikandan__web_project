@@ -162,15 +162,13 @@ a:hover{
     height: 2vh;
 }
 
-#marque{
-    width: 500%;
-    height: 40vh;
-}
 #marque a{
     display: inline-block;
 }
 
 #marque{
+    width: 500%;
+    height: 40vh;
     animation-name: marquee;
     animation-delay: 0s;
     animation-iteration-count:infinite;
