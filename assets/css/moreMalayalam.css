@@ -1,0 +1,128 @@
+body{
+    background-color:#0c0f12;
+}
+.nav1{
+    background-color: #36454F;
+    width: 100%;
+    height: 70px;
+    margin-top: 15px;
+    margin-top: 0;
+        
+}
+/* .nav1.input{
+    color: seashell;
+} */
+.annathae:hover{
+    opacity: 0.8;
+}
+#searchBar{
+    border-radius: 24px;
+    margin-top:15px ;
+    width: 300px;
+    height: 40px;
+    margin-left: 1000px;
+    text-align: center;
+    background-color:#0c0f12;
+    
+}
+/* #searchBar:focus{
+    width: 350px;
+} */
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: whitesmoke;
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 20px;  
+}
+.mainContent{
+    position: relative;
+    /* background-color: wheat; */
+    width: 25%;
+    height: 70vh;
+}
+.Kollywood{
+    position: absolute;
+}
+#KollywoodImg{
+    width: 125%;
+    height: 35vh;
+    margin-top: 25%;
+    margin-left: 5%;
+    border-radius: 24px;
+}
+#KollywoodImg:hover{
+   opacity: 0.8;
+   border-radius: 24px;
+
+}
+.allMovie{
+    position: absolute;
+    width: 140vh;
+    height: 90vh;
+    /* background-color: white; */
+    /* border-spacing: 10%; */
+    margin-top: 0%;
+    margin-left: 50vh;
+
+}
+.movieList{
+    position: absolute;
+    width: 60%;
+    height: 7vh;
+    background-color: #0c0f12;
+    /* background-color: blue; */
+    margin-top:15%;
+    margin-left: 5%;
+    border-radius: 10px;
+} 
+.movieList:hover{
+    border: lightgray 1px solid;
+
+}
+.movieImg{
+    position: absolute;
+    width: 8%;
+    height: 7vh;
+    border-radius: 12px;
+    margin-left: 1%;
+}
+#TamilMovies{
+color: orangered;
+font-size: 50px;
+position: absolute;
+}
+#listOfMovies{
+    font-size: 20px;
+    color: lightgray;
+    position: absolute;
+    margin-top: 9%;
+    margin-left: 1%;
+}
+#TamilMovies:hover{
+    color: rgb(255, 255, 255);
+}
+.moviesName{
+    position: absolute;
+    font-family:  sans-serif;
+    color: white;
+    margin-left: 12%;
+    margin-top: 1%;
+    font-size: 20px;
+}
+.musician{
+    position: absolute;
+    font-family:  sans-serif;
+    font-size: 15px;
+    color: #9fa0a1;
+    margin-left: 12%;
+    margin-top: 3%;
+}
+#addMovies{
+    /* background-color: white; */
+    width: 3%;
+    height: 4vh;
+    position: absolute;
+    margin-left: 22%;
+    margin-top: 5%;
+}
