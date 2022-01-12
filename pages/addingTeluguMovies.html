@@ -14,20 +14,20 @@
     <div class="mainContent">
 
        <form action="" onsubmit="addingMovie(event)" >
-        <input type="text" placeholder="Add movie name" id="teluguMovieName" autofocus required>
+        <input type="text" placeholder="Add movie name" id="teluguMovieName" autofocus required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
         <input type="text" placeholder="Add movie poster" id="teluguMoviePoster" required>
-        <input type="text" placeholder="Enter_Music_Director" id="teluguMusicDirector" required><br><br><br>
+        <input type="text" placeholder="Enter_Music_Director" id="teluguMusicDirector" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"><br><br><br>
 
-        <input type="text" id="firstSongNameOfTm" placeholder="Enter the 1st song name" required>
+        <input type="text" id="firstSongNameOfTm" placeholder="Enter the 1st song name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
         <input type="text" id="firstSongUrlOfTm" placeholder="Enter the Song Url" required><br>
 
-        <input type="text" id="secondSongNameOfTm" placeholder="Enter the 2nd song name" required>
+        <input type="text" id="secondSongNameOfTm" placeholder="Enter the 2nd song name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
         <input type="text" id="secondSongUrlOfTm" placeholder="Enter the Song Url" required><br>
 
-        <input type="text" id="thirdSongNameofTm" placeholder="Enter the 3rd song name">
+        <input type="text" id="thirdSongNameofTm" placeholder="Enter the 3rd song name" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
         <input type="text" id="thirdSongUrlOfTm" placeholder="Enter the Song Url"><br>
 
-        <input type="text" id="artistNameOfTm" placeholder="Artisit Name" required>
+        <input type="text" id="artistNameOfTm" placeholder="Artisit Name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
         <input type="text" name="artistImgOfTm" id="artistImgOfTm" placeholder="Artist Image url" required>
 
         <button type="submit">Add</button>
