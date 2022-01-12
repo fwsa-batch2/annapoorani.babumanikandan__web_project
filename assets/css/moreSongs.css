@@ -9,9 +9,18 @@ body{
     margin-top: 0;
         
 }
-/* .nav1.input{
-    color: seashell;
-} */
+#one{
+/* background-color: blue; */
+height: 10vh;
+margin-top: 20%;
+}
+#moreOption{
+    position: absolute;
+    width: 3%;
+    height: 3vh;
+    margin-left: 90%;
+    margin-top: 2%;
+}
 .annathae:hover{
     opacity: 0.8;
 }
@@ -20,14 +29,14 @@ body{
     margin-top:15px ;
     width: 300px;
     height: 40px;
+    color: white;
+    font-size: 15px;
     margin-left: 1000px;
     text-align: center;
     background-color:#0c0f12;
     
 }
-/* #searchBar:focus{
-    width: 350px;
-} */
+
 a{
     text-decoration: none;
     font-size: 20px;
@@ -127,3 +136,4 @@ position: absolute;
     margin-left: 22%;
     margin-top: 5%;
 }
+

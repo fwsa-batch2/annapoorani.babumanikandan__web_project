@@ -37,8 +37,10 @@ function addingMovieInHtml() {
                 <span class='movieList'><img src="${moviePosters}" alt='${movieNames}' class='movieImg'>
                 <p class='moviesName'>${movieNames}</p>"
                 <p class='musician'>${musicDirector}</p>
-                </span><br><br><br><br>
-                </a>
+                <img src="./../assets/img/bin.png" alt="more" id="moreOption" onclick="clickHandler()">
+                </span><br><br><br><br></a>
+                
+                
             </div>`
     }
 
@@ -52,6 +54,7 @@ function addingMovieInHtml() {
 }
 
 renderingMovie();
+
 
 
 

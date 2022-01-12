@@ -1,6 +1,9 @@
 body{
     background-color:#26292c;
     position: relative;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
 }
 .mainContent{
     width: 90%;

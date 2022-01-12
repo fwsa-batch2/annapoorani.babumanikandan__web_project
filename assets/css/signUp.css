@@ -25,13 +25,13 @@ body{
     position: relative;
     
 }
-/* img{
+#logo{
     position: absolute;
-    height: 95vh;
-    width: 42%;
-    border-top-left-radius:24px ;
-    border-bottom-left-radius: 24px;
-} */
+    width: 8%;
+    height: 14vh;
+    margin-left: 42%;
+    /* margin-top: 0; */
+}
 input{
     width: 30%;
     padding: 2%;
@@ -126,9 +126,6 @@ input{
 padding: 4%;
 
 }
-.allInputs{
-    /* margin-top: 5%; */
-    
-}
+
 
 
