@@ -12,26 +12,28 @@
 
 <body>
     <div class="mainContent">
-        <input type="text" placeholder="Add movie name" id="malayalamMovieName" required>
+        <form action="" onsubmit="addingMovie(event)">
+            <input type="text" placeholder="Add movie name" id="malayalamMovieName" autofocus required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
         <input type="text" placeholder="Add movie poster" id="malayalamMoviePoster" required>
-        <input type="text" placeholder="Enter_Music_Director" id="malayalamMusicDirector" required><br><br>
+        <input type="text" placeholder="Enter_Music_Director" id="malayalamMusicDirector" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"><br><br>
 
-        <input type="text" id="firstSongNameOfMm" placeholder="Enter the 1st song name" required>
+        <input type="text" id="firstSongNameOfMm" placeholder="Enter the 1st song name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
         <input type="text" id="firstSongUrlOfMm" placeholder="Enter the Song Url" required><br>
 
-        <input type="text" id="secondSongNameOfMm" placeholder="Enter the 2nd song name" required>
+        <input type="text" id="secondSongNameOfMm" placeholder="Enter the 2nd song name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
         <input type="text" id="secondSongUrlOfMm" placeholder="Enter the Song Url" required><br>
 
-        <input type="text" id="thirdSongNameOfMm" placeholder="Enter the 3rd song name">
+        <input type="text" id="thirdSongNameOfMm" placeholder="Enter the 3rd song name" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
         <input type="text" id="thirdSongUrlOfMm" placeholder="Enter the Song Url"><br>
 
-        <input type="text" id="artistNameOfMm" placeholder="Artisit Name" required>
+        <input type="text" id="artistNameOfMm" placeholder="Artisit Name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
         <input type="text" name="artistImgOfMm" id="artistImgOfMm" placeholder="Artist Image url" required><br><br><br>
 
 
-        <input type="button" value="submit" onclick="addingMovie(event)">
-        <input type="reset" value="Clear">
+        <button type="submit">Add</button>
+        <button type="reset">Clear</button>
 
+        </form>
     </div>
 
     <script src="./../assets/js/addingMalayalamMovie.js"></script>

@@ -14,33 +14,44 @@
     <div class="mainContent">
         <span class="logo">
             <img src="./../assets/img/logo1.png" alt="logo">
-            
+
         </span>
-        <div class="allInputs">
-            <p id="addingTamilSongs">Adding Tamil Songs</p>
-        <input type="text" placeholder="Add movie name" id="movieName" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-        <input type="text" placeholder="Add movie poster" id="moviePoster" required >
-        <input type="text" placeholder="Enter_Music_Director" id="musicDirector" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"><br><br><br>
-        <input type="text" id="firstSongName" placeholder="Enter the 1st song name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-        <input type="text" id="firstSongUrl" placeholder="Enter the Song Url" required ><br>
-
-        <input type="text" id="secondSongName" placeholder="Enter the 2nd song name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-        <input type="text" id="secondSongUrl" placeholder="Enter the Song Url" required ><br>
-
-        <input type="text" id="thirdSongName" placeholder="Enter the 3rd song name" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-        <input type="text" id="thirdSongUrl" placeholder="Enter the Song Url" ><br>
-
-        <input type="text" id="artistName" placeholder="Artisit Name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-        <input type="text" name="artistImg" id="artistImg" placeholder="Artist Image url" required >
+        <form action="" onsubmit="addingMovie(event)">
+            <div class="allInputs">
+                <p id="addingTamilSongs">Adding Tamil Songs</p>
 
 
+                <!-- onsubmit="addingMovie(event)" -->
+                <input type="text" placeholder="Add movie name" id="movieName"
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" autofocus required>
 
+                <input type="text" placeholder="Add movie poster" id="moviePoster" required>
+                <input type="text" placeholder="Enter_Music_Director" id="musicDirector" required
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"><br><br><br>
+                <input type="text" id="firstSongName" placeholder="Enter the 1st song name" required
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+                <input type="text" id="firstSongUrl" placeholder="Enter the Song Url" required><br>
 
-        <input type="button" value="submit" onclick="addingMovie(event)">
-        <input type="reset" value="Clear">
+                <input type="text" id="secondSongName" placeholder="Enter the 2nd song name" required
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+                <input type="text" id="secondSongUrl" placeholder="Enter the Song Url" required><br>
+
+                <input type="text" id="thirdSongName" placeholder="Enter the 3rd song name"
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+                <input type="text" id="thirdSongUrl" placeholder="Enter the Song Url"><br>
+
+                <input type="text" id="artistName" placeholder="Artisit Name" required
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+                <input type="text" name="artistImg" id="artistImg" placeholder="Artist Image url" required>
+                <button type="submit">Submit</button>
+                <input type="reset" value="Clear">
+            </div>
+        </form>
     </div>
 
-    </div>
+   
+
+
 
     <script src="./../assets/js/addMovie.js"></script>
 </body>

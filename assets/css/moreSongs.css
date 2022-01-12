@@ -77,7 +77,8 @@ a{
     border-radius: 10px;
 } 
 .movieList:hover{
-    border: lightgray 1px solid;
+    border:#14a599 1px solid;
+    box-shadow: 5px 5px 20px #4a8a84 ;
 
 }
 .movieImg{

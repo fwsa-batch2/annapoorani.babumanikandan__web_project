@@ -71,10 +71,10 @@ input{
 #invalid{
     color: red;
     font-size: 20px;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
     width: 20%;
     height: 5vh;
-    margin-left: 35%;
+    margin-left: 30%;
 
 }
 
@@ -83,10 +83,7 @@ input{
     height: 2vh;
     position: absolute;
 }
-/* #signUp{
-    font-size: 40px;
-    margin-left: 0%;
-} */
+
 #account{
     
     margin-left: 25%;
