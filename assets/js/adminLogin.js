@@ -15,6 +15,6 @@ function submitHandler(event){
     else{
         const errorAlert = document.getElementById("alert");
         errorAlert.innerHTML = "Invalid Login Credentials";
-        return
+        
     }
     }
