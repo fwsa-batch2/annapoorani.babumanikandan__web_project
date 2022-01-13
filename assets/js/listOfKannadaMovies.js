@@ -64,7 +64,7 @@ function removeMovie(index){
     
     const movieInString = JSON.stringify(movieListInParse);
     
-    localStorage.setItem("kannadaMovies",movieInString)
+    localStorage.setItem("kannadaMovies",movieInString);
     addingMovieInHtml();
 
 
