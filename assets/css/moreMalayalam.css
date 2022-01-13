@@ -10,9 +10,19 @@ body{
     
         
 }
-/* .nav1.input{
-    color: seashell;
-} */
+#one{
+    /* background-color: blue; */
+    height: 10vh;
+    margin-top: 20%;
+    }
+    #moreOption{
+        position: absolute;
+        width: 3%;
+        height: 3vh;
+        margin-left: 90%;
+        margin-top: 2%;
+    }
+
 .annathae:hover{
     opacity: 0.8;
 }
@@ -21,14 +31,14 @@ body{
     margin-top:15px ;
     width: 300px;
     height: 40px;
+    color: white;
+    font-size: 15px;
     margin-left: 1000px;
     text-align: center;
     background-color:#0c0f12;
     
 }
-/* #searchBar:focus{
-    width: 350px;
-} */
+
 a{
     text-decoration: none;
     font-size: 20px;
@@ -78,7 +88,8 @@ a{
     border-radius: 10px;
 } 
 .movieList:hover{
-    border: lightgray 1px solid;
+    border: #14a599 1px solid;
+    box-shadow: 5px 5px 20px #4a8a84
 
 }
 .movieImg{

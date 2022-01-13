@@ -31,10 +31,11 @@ function addingMovieInHtml() {
 
         movies +=
             `<div class='addingMovie'>
-            <a href="./storingKannadaSongs.html?movies=${movieNames}">
         <span class='movieList'><img src="${moviePosters}" alt='${movieNames}' class='movieImg'>
-        <p class='moviesName'>${movieNames}</p>"
-        <p class='musician'>${musicDirector}</p>
+        <a href="./storingKannadaSongs.html?movies=${movieNames}">
+        <p class='moviesName'>${movieNames}</p>
+        <p class='musician'>${musicDirector}</p></a>
+        <img src="./../assets/img/bin.png" alt="more" id="moreOption" onclick="removeMovie(${i})">
         </span><br><br><br><br>
         </div>`
     }
@@ -49,6 +50,25 @@ function addingMovieInHtml() {
 }
 
 renderingMovie();
+
+let movielist =[];
+function removeMovie(index){
+
+    console.group("removemovie")
+
+    const movieListInParse = JSON.parse(localStorage.getItem("kannadaMovies"));
+    console.log(movieListInParse);
+    
+    movieListInParse.splice(index,index);
+    
+    
+    const movieInString = JSON.stringify(movieListInParse);
+    
+    localStorage.setItem("kannadaMovies",movieInString)
+    addingMovieInHtml();
+
+
+}
 
 
 

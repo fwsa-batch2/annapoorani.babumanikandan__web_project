@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,41 @@
     <title>Kannada Movies</title>
     <link rel="stylesheet" href="./../assets/css/addingMovie.css">
 </head>
+
 <body>
     <div class="mainContent">
         <form action="" onsubmit="addingMovie(event)">
-            <input type="text" placeholder="Add movie name" id="kannadaMovieName" autofocus required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-    <input type="text" placeholder="Add movie poster" id="kannadaMoviePoster" required >
-    <input type="text" placeholder="Enter_Music_Director" id="kannadaMusicDirector" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"><br><br>
-    
-    <input type="text" id="firstSongNameOfKm" placeholder="Enter the 1st song name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-        <input type="text" id="firstSongUrlOfKm" placeholder="Enter the Song Url" required ><br>
+            <input type="text" placeholder="Add movie name" id="kannadaMovieName" autofocus
+                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+            <input type="text" placeholder="Add movie poster" id="kannadaMoviePoster">
+            <input type="text" placeholder="Enter_Music_Director" id="kannadaMusicDirector"
+                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"><br><br>
 
-        <input type="text" id="secondSongNameOfKm" placeholder="Enter the 2nd song name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-        <input type="text" id="secondSongUrlOfKm" placeholder="Enter the Song Url" required ><br>
+            <input type="text" id="firstSongNameOfKm" placeholder="Enter the 1st song name"
+                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+            <input type="text" id="firstSongUrlOfKm" placeholder="Enter the Song Url"><br>
 
-        <input type="text" id="thirdSongNameOfKm" placeholder="Enter the 3rd song name" pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-        <input type="text" id="thirdSongUrlOfKm" placeholder="Enter the Song Url"><br>
+            <input type="text" id="secondSongNameOfKm" placeholder="Enter the 2nd song name"
+                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+            <input type="text" id="secondSongUrlOfKm" placeholder="Enter the Song Url"><br>
 
-        <input type="text" id="artistNameOfKm" placeholder="Artisit Name" required pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-        <input type="text" name="artistImgOfKm" id="artistImgOfKm" placeholder="Artist Image url" required ><br><br><br>
+            <input type="text" id="thirdSongNameOfKm" placeholder="Enter the 3rd song name"
+                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+            <input type="text" id="thirdSongUrlOfKm" placeholder="Enter the Song Url"><br>
+
+            <input type="text" id="artistNameOfKm" placeholder="Artisit Name"
+                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+            <input type="text" name="artistImgOfKm" id="artistImgOfKm" placeholder="Artist Image url"><br><br><br>
 
 
-    
-    <button type="submit">Add</button>
-    <button type="reset">Clear</button>
+
+            <button type="submit">Add</button>
+            <button type="reset">Clear</button>
 
         </form>
     </div>
 
     <script src="./../assets/js/addingKannadaMovies.js"></script>
 </body>
+
 </html>

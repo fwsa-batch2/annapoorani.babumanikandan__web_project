@@ -10,7 +10,7 @@ function submitHandler(event){
     if(adminEmailId==adminMailInput && adminPassword==adminPass){
         const alert = document.getElementById("alert");
         alert.innerHTML = "Successfully LoggedIn";
-        window.location.href="./../pages/musicpage.html"
+        window.location.href="./../pages/musicpage.html";
     }
     else{
         const errorAlert = document.getElementById("alert");

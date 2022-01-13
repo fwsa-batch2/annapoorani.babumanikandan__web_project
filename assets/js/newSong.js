@@ -61,7 +61,7 @@ function addingSongs() {
             <div class='div2'>
                 ${getSongsListHTML(movieSong)}
             </div>`;
-    // }
+    
 
     let movieSongs = document.getElementById("mainContent");
     console.log(movieSongs);

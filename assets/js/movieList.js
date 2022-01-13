@@ -34,7 +34,8 @@ function addingMovieInHtml() {
         movies +=
             `<div class='addingMovie' id="${movieNames}">
                 
-                <span class='movieList'><a href="./newSongs.html?movie=${movieNames}">
+                <span class='movieList'>
+                <a href="./../pages/newSongs.html?movie=${movieNames}">
                 <img src="${moviePosters}" alt='${movieNames}' class='movieImg'>
                 <p class='moviesName'>${movieNames}</p>
                 <p class='musician'>${musicDirector}</p></a>
@@ -58,17 +59,18 @@ renderingMovie();
 
 let movielist =[];
 function removeMovie(index){
+
     console.group("removemovie")
     const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
     console.log(movieListInParse);
     
-    movieListInParse.splice(index,index+1);
+    movieListInParse.splice(index,index);
     
     
     const movieInString = JSON.stringify(movieListInParse);
     
     localStorage.setItem("Movies",movieInString)
-    addingMovieInHtml()
+    addingMovieInHtml();
 
 
 }

@@ -24,20 +24,23 @@ function addingMovieInHtml() {
     let len = movieListInParse.length;
     let movies = ''
 
-    for (let i=0; i<len; i++) {
+    for (let i = 0; i < len; i++) {
         let movieNames = movieListInParse[i].movieName;
 
         let moviePosters = movieListInParse[i].moviePoster;
         let musicDirector = movieListInParse[i].musicDirector;
 
         movies +=
-            `<div class='addingMovie'>
-            <a href="./storingMalayalamSongs.html?movies=${movieNames}">
-        <span class='movieList'><img src="${moviePosters}" alt='${movieNames}' class='movieImg'>
-        <p class='moviesName'>${movieNames}</p>"
-        <p class='musician'>${musicDirector}</p>
+           
+        `<div class='addingMovie' > 
+        
+        <span class='movieList'>  
+        <a href="./storingMalayalamSongs.html?movies=${movieNames}">
+        <img src="${moviePosters}" alt='${movieNames}' class='movieImg'>
+        <p class='moviesName'>${movieNames}</p>
+        <p class='musician'>${musicDirector}</p></a>
+        <img src="./../assets/img/bin.png" alt="more" id="moreOption" onclick="removeMovie(${i})">
         </span><br><br><br><br>
-        </a>
         </div>`
     }
 
@@ -50,9 +53,25 @@ function addingMovieInHtml() {
     console.groupEnd("addingMovieInHtml")
 }
 
+
 renderingMovie();
 
 
 
+let movielist =[];
+function removeMovie(index){
+    console.group("removemovie")
+    const movieListInParse = JSON.parse(localStorage.getItem("MalayalamMovies"));
+    console.log(movieListInParse);
+    
+    movieListInParse.splice(index,index);
+    
+    
+    const movieInString = JSON.stringify(movieListInParse);
+    
+    localStorage.setItem("MalayalamMovies",movieInString)
+    addingMovieInHtml()
 
+
+}
 
