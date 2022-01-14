@@ -60,7 +60,7 @@ renderingMovie();
 let movielist =[];
 function removeMovie(index){
 
-    console.group("removemovie")
+    console.group("removemovie");
     const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
     console.log(movieListInParse);
     
@@ -69,7 +69,7 @@ function removeMovie(index){
     
     const movieInString = JSON.stringify(movieListInParse);
     
-    localStorage.setItem("Movies",movieInString)
+    localStorage.setItem("Movies",movieInString);
     addingMovieInHtml();
 
 
