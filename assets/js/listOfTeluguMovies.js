@@ -61,7 +61,7 @@ function removeMovie(index){
     const movieListInParse = JSON.parse(localStorage.getItem("teluguMovies"));
     console.log(movieListInParse);
     
-    movieListInParse.splice(index,index);
+    movieListInParse.splice(index,1);
     
     
     const movieInString = JSON.stringify(movieListInParse);
