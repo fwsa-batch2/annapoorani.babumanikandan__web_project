@@ -15,9 +15,7 @@ body{
     margin-top: 0; 
     font-family: Acme, sans-serif;   
 }
-/* .nav1.input{
-    color: seashell;
-} */
+
 #searchIcon{
     position: absolute;
     width: 2%;
@@ -86,7 +84,7 @@ img:hover{
     position: absolute;
     margin-top: 90px;
     /* background-color: blueviolet; */
-    /* margin-left: 120px; */
+    margin-left: 3%;
     padding: 60px;
     
 }

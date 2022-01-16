@@ -51,7 +51,7 @@ function addingMovieInHtml() {
 
 renderingMovie();
 
-let movielist =[];
+
 function removeMovie(index){
 
     console.group("removemovie")

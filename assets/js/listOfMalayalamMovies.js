@@ -58,7 +58,7 @@ renderingMovie();
 
 
 
-let movielist =[];
+
 function removeMovie(index){
     console.group("removemovie")
     const movieListInParse = JSON.parse(localStorage.getItem("MalayalamMovies"));
