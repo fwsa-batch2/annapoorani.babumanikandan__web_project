@@ -38,6 +38,11 @@ function addingMovie(event) {
         return;
     }
 
+    let validatingSongs =validateSong(firstSongNameOfTm,secondSongNameOfTm,thirdSongNameOfTm );
+    if(validatingSongs){
+        alert("The song is already existed");
+        return
+    }
 
     teluguMovieInArray.push(movieList);
     console.log(teluguMovieInArray);
@@ -81,3 +86,10 @@ function validateMovieName(movieNames){
     }
     return isExist;
 }
+function validateSong(song1,song2,song3){
+    let isSongExist =false;
+if(song1===song2||song2===song3 || song1===song3 || song1===song2===song3){
+    isSongExist =true;
+}
+return isSongExist;
+} 

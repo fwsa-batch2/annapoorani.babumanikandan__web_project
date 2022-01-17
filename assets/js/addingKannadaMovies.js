@@ -37,6 +37,12 @@ function addingMovie(event) {
         return;
     }
 
+    let validatingSongs =validateSong(firstSongNameOfKm,secondSongNameOfKm,thirdSongNameOfKm);
+    if(validatingSongs){
+        alert("The song is already existed");
+        return
+    }
+
     kannadaMovieInArray.push(listOfKannadaMovies);
     console.log(kannadaMovieInArray);
 
@@ -78,3 +84,10 @@ function validateMovieName(movieNames){
     }
     return isExist;
 }
+function validateSong(song1,song2,song3){
+    let isSongExist =false;
+if(song1===song2||song2===song3 || song1===song3 || song1===song2===song3){
+    isSongExist =true;
+}
+return isSongExist;
+} 

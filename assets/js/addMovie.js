@@ -43,6 +43,12 @@ function addingMovie(event) {
         return;
     }
 
+    let validatingSongs =validateSong(firstSongName,secondSongName,thirdSongName);
+    if(validatingSongs){
+        alert("The song is already existed");
+        return
+    }
+
     movieInArray.push(movieList);
     console.log(movieInArray);
 
@@ -91,5 +97,10 @@ function validateMovieName(movieName) {
     return isExist;
 }
 
-
-
+function validateSong(song1,song2,song3){
+    let isSongExist =false;
+if(song1===song2||song2===song3 || song1===song3 || song1===song2===song3){
+    isSongExist =true;
+}
+return isSongExist;
+} 
