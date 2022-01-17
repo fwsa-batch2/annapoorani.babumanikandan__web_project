@@ -12,18 +12,18 @@ console.group("validateDateOfBirth");
 let userDetailsInArray = [];
 
 function onPageLoad() {
-    console.group("onPageLoad")
+    console.group("onPageLoad");
     let userList = JSON.parse(localStorage.getItem("userDetails"));
     console.table(userList);
     if (userList) {
         userDetailsInArray = userList;
     }
-    console.groupEnd("onPageLoad")
+    console.groupEnd("onPageLoad");
 }
 
 function submitHandler(event) {
     event.preventDefault();
-    console.group("submitHandler")
+    console.group("submitHandler");
     let mailId = document.getElementById("mailId").value.toLowerCase();
     let passWord = document.getElementById("password").value;
     let confirmingPassword = document.getElementById("confirmingPassword").value;
@@ -38,8 +38,7 @@ function submitHandler(event) {
         "Date_of_birth": dateOfBirth,
         "Profilename": profileName
     }
-
-
+    
     if (passWord != confirmingPassword) {
         document.getElementById("invalid").innerHTML = "Invalid password";
         return;
@@ -48,7 +47,7 @@ function submitHandler(event) {
 
 
     let validatingEmail = validate(mailId);
-    if (validatingEmail) {
+    if (validatingEmail){
         alert("This email_Id is already existed!");
         return;
     }
@@ -67,9 +66,9 @@ function submitHandler(event) {
 
 
 
-function validate(mailIdOfUser) {
+function validate(mailIdOfUser){
 
-    console.group("Validate")
+    console.group("Validation of mailId");
 
     let userList = JSON.parse(localStorage.getItem("userDetails"));
     let isExist = false;
@@ -89,27 +88,11 @@ function validate(mailIdOfUser) {
 
         }
     }
-    console.groupEnd("Validate")
+    console.groupEnd("Validation of mailId");
     return isExist;
 }
 
-function check() {
-    console.group("check")
-    const showPassword = document.getElementById("checkbox");
 
-    if (showPassword.checked) {
-        document.getElementById("password").type = "text";
-        document.getElementById("confirmingPassword").type = "text";
-
-
-    }
-    else {
-        document.getElementById("password").type = "password";
-        document.getElementById("confirmingPassword").type = "password";
-
-    }
-    console.groupEnd("check")
-}
 
 onPageLoad();
 
@@ -117,7 +100,20 @@ onPageLoad();
 
     
 
+function showpass(){
+     let passWord = document.getElementById("password");
+     let confirmPass = document.getElementById("confirmingPassword");
+      if (passWord.type === "password" && confirmPass.type==="password") { 
+        passWord.type = "text";
+        confirmPass.type = "text";
+        
+     }
+       else { passWord.type = "password"; 
+       confirmPass.type = "password";
+       
+    } 
 
+} 
 
 
 

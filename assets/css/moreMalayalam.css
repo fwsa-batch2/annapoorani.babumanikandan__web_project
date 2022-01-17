@@ -1,5 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    background-color:#222529;
+    background-color:#0c0f12;
 }
 .nav1{
     background-color: #36454F;
@@ -88,8 +93,8 @@ a{
     border-radius: 10px;
 } 
 .movieList:hover{
-    border: #14a599 1px solid;
-    box-shadow: 5px 5px 20px #4a8a84
+    border: #fa4551 1px solid;
+    box-shadow: 5px 5px 20px #EF3340;
 
 }
 .movieImg{
@@ -100,9 +105,10 @@ a{
     margin-left: 1%;
 }
 #TamilMovies{
-color: #1dbdaf;
+color: #EF3340;
 font-size: 50px;
 position: absolute;
+margin-top: 4%;
 }
 #listOfMovies{
     font-size: 20px;
@@ -112,7 +118,7 @@ position: absolute;
     margin-left: 1%;
 }
 #TamilMovies:hover{
-    color: #279990;
+    color: #f13743;
 }
 .moviesName{
     position: absolute;

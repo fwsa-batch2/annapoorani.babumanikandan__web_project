@@ -12,20 +12,22 @@ body{
     height: 70px;
     margin-top: 15px;
     margin-top: 0;
+    
         
 }
 #one{
-/* background-color: blue; */
-height: 10vh;
-margin-top: 20%;
-}
-#moreOption{
-    position: absolute;
-    width: 3%;
-    height: 3vh;
-    margin-left: 90%;
-    margin-top: 2%;
-}
+    /* background-color: blue; */
+    height: 10vh;
+    margin-top: 20%;
+    }
+    #moreOption{
+        position: absolute;
+        width: 3%;
+        height: 3vh;
+        margin-left: 90%;
+        margin-top: 2%;
+    }
+
 .annathae:hover{
     opacity: 0.8;
 }
@@ -91,8 +93,8 @@ a{
     border-radius: 10px;
 } 
 .movieList:hover{
-    border:#fa4551 1px solid;
-    box-shadow: 1px 1px 20px #EF3340 ;
+    border: #fa4551 1px solid;
+    box-shadow: 5px 5px 20px #EF3340;
 
 }
 .movieImg{
@@ -116,7 +118,7 @@ margin-top: 4%;
     margin-left: 1%;
 }
 #TamilMovies:hover{
-    color:#f13743 ;
+    color: #f13743;
 }
 .moviesName{
     position: absolute;
@@ -139,7 +141,6 @@ margin-top: 4%;
     width: 3%;
     height: 4vh;
     position: absolute;
-    margin-left: 22%;
+    margin-left: 27%;
     margin-top: 5%;
 }
-

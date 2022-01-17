@@ -55,20 +55,17 @@ function isUserDetailExist(userMail, userPassword) {
     return isExist;
 }
 
-function checking() {
-    const showPassword = document.getElementById("checkbox");
 
-    if (showPassword.checked) {
-        document.getElementById("password").type = "text";
-        
 
+function showPass(){
+    let password = document.getElementById("password");
+    if(password.type==="password"){
+        password.type ="text" ;
     }
-    else {
-        document.getElementById("password").type = "password";
-        
+    else{
+        password.type ="password" ;
     }
 }
-
 onPageLoad();
 
 
