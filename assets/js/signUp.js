@@ -96,10 +96,6 @@ function validate(mailIdOfUser){
 
 onPageLoad();
 
-
-
-    
-
 function showpass(){
      let passWord = document.getElementById("password");
      let confirmPass = document.getElementById("confirmingPassword");

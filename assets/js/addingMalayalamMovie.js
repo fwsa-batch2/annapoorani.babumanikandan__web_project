@@ -75,6 +75,7 @@ function validateMovieName(movieNames){
                 break;
         }
     }
-    return isExist;
+    
 }
+return isExist;
 }
