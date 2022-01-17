@@ -58,12 +58,12 @@ function isUserDetailExist(userMail, userPassword) {
 
 
 function showPass(){
-    let password = document.getElementById("password");
-    if(password.type=="password"){
-        password.type ="text" ;
+    let passWord = document.getElementById("password").type;
+    if(passWord=="password"){
+        passWord ="text" ;
     }
     else{
-        password.type ="password" ;
+        passWord ="password" ;
     }
 }
 onPageLoad();
