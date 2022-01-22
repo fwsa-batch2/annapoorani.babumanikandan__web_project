@@ -31,30 +31,20 @@ input{
     margin-top:15px ;
     width: 300px;
     height: 40px;
+    font-size: 15px;
     margin-left: 1000px;
     background-color:#0c0f12;
     color: white;
     
 }
-/* input:focus{
-    width: 350px;
-} */
+
 a{
     text-decoration: none;
     font-size: 20px;
     color: whitesmoke;
     font-family: 'Courier New', Courier, monospace;
-    margin-left: 20px;
-    
-    
+    margin-left: 20px;   
 }
-/* .div1{
-    color: aliceblue;
-    padding-top: 150px;
-    font-size: 90px;
-    text-align: center;
-    
-} */
 .div1{
     margin-top: 10px;
 }
@@ -104,17 +94,7 @@ img:hover{
 a:hover{
     color: black;
 }
-/* .arrows{
-    width: 5%;
-    height: 5vh;
-    position: absolute;
-} */
-/* .seeMore{ */
-    /* position: absolute; */
-    /* margin-left: 60%;
-    margin-top: 2%; */
-   
-/* } */
+
 #tamilMore{
     color: crimson;
     margin-left: 75%;

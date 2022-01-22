@@ -5,7 +5,7 @@ const movieName = urlParam.get("movie");
 console.log(movieName);
 
 
-function getMovieDetails(name) {
+function getMovieDetails(name){
 
     const movieList = JSON.parse(localStorage.getItem("Movies"));
     console.log(movieList);
@@ -48,9 +48,11 @@ function addingSongs() {
 
     songs += ` <div class='div1'>
             <span class='span1'>
-                
+           
+            <a href="./../pages/musicpage.html" class="homePlaylist">Home</a> .
+            <a href="#" class="homePlaylist">Playlist</a> . <a href="#" class="homePlaylist">${movieNameOfTm}</a>
                 <br><br>
-                <img id='abi' src='${moviePosters}' alt='${movieNameOfTm}'></span>
+                <img id='moviePoster' src='${moviePosters}' alt='${movieNameOfTm}'></span>
     
             <div class='artist'>
                 <span><h1>Artists</h1></span>
@@ -59,7 +61,8 @@ function addingSongs() {
               
             </div>
             <div class='div2'>
-                ${getSongsListHTML(movieSong)}
+            <p id="id1"><strong>${movieNameOfTm + " Songs"}</strong></p><br><br>
+                    ${getSongsListHTML(movieSong)}
             </div>`;
     
 
@@ -70,6 +73,7 @@ function addingSongs() {
     console.log(movieSongs);
 
 }
+
 
 
 function getSongsListHTML(songList) {

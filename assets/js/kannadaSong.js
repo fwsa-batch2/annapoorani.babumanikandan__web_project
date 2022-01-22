@@ -44,8 +44,10 @@ function addingSongs() {
     songs += ` <div class='div1'>
             <span class='span1'>
                 
+            <a href="./../pages/musicpage.html" class="homePlaylist">Home</a> .
+            <a href="#" class="homePlaylist">Playlist</a> . <a href="#" class="homePlaylist">${movieNameOfKm}</a>
                 <br><br>
-                <img id='abi' src='${moviePosters}' alt='${movieNameOfKm}'></span>
+                <img id='moviePoster' src='${moviePosters}' alt='${movieNameOfKm}'></span>
     
             <div class='artist'>
                 <span><h1>Artists</h1></span>
@@ -54,6 +56,7 @@ function addingSongs() {
               
             </div>
             <div class='div2'>
+            <p id="id1"><strong>${movieNameOfKm + " Songs"}</strong></p><br><br>
                 ${getSongsListHTML(movieSong)};
             </div>`;
     

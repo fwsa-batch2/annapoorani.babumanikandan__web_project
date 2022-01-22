@@ -38,7 +38,7 @@ function addingMovie(event) {
 
 
     let validatingMovieName = validateMovieName(movieName);
-    if (validatingMovieName) {
+    if (validatingMovieName){
         alert("This movie name is already exist!");
         return;
     }
@@ -46,7 +46,7 @@ function addingMovie(event) {
     let validatingSongs =validateSong(firstSongName,secondSongName,thirdSongName);
     if(validatingSongs){
         alert("The song is already existed");
-        return
+        return;
     }
 
     movieInArray.push(movieList);
