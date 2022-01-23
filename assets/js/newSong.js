@@ -99,19 +99,4 @@ function getSongsListHTML(songList) {
     return songsHTML;
 }
 
-{/* <li>
-${song.nameOfSecondSong}
-</li><br>
-<li>
-<audio controls>
-    <source src='${song.urlOfSecondSong}' type='audio/mpeg'>
-</audio><br><br>
-</li>
-<li>
-${song.nameOfThirdSong}
-</li><br>
-<li>
-<audio controls>
-    <source src='${song.urlOfThirdSong}' type='audio/mpeg'>
-</audio><br><br>
-</li> */}
+

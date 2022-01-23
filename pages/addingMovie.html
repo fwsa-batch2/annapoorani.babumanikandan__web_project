@@ -5,52 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>fidaa</title>
+    <title>Adding Tamil Songs</title>
     <link rel="icon" href="/assets/img/pngfind.com-music-symbols-png-1040225.png">
     <link rel="stylesheet" href="./../assets/css/addingMovie.css">
 </head>
 
 <body>
-    <div class="mainContent">
-        <span class="logo">
-            <img src="./../assets/img/logo2-removebg-preview.png" alt="logo">
 
-        </span>
+    <div class="mainContent">
+        <img src="./../assets/img/logo2-removebg-preview.png" alt="logo" class="logo">
         <form action="" onsubmit="addingMovie(event)">
             <div class="allInputs">
-                <p id="addingTamilSongs">Adding Tamil Songs</p>
                 
+                <p id="addingTamilSongs"><strong>Adding Tamil Movie</strong></p>
 
 
-                
+
+
                 <input type="text" placeholder="Enter movie name" id="movieName"
-                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" autofocus >
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" class="movieName" autofocus required>
 
-                <input type="text" placeholder="Enter movie poster Url" id="moviePoster" >
-                <input type="text" placeholder="Enter Music_Director" id="musicDirector" 
-                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"><br><br><br>
-                <input type="text" id="firstSongName" placeholder="Enter the 1st song name" 
-                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-                <input type="text" id="firstSongUrl" placeholder="Enter the Song Url" ><br>
+                <input type="text" placeholder="Enter movie poster Url" id="moviePoster" class="moviePoster" required>
 
-                <input type="text" id="secondSongName" placeholder="Enter the 2nd song name" 
-                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-                <input type="text" id="secondSongUrl" placeholder="Enter the Song Url" ><br>
+                <input type="text" placeholder="Enter Music_Director" id="musicDirector" class="musicDirector"
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" required><br><br><br>
+
+                <input type="text" id="firstSongName" placeholder="Enter the 1st song name"
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" class="leftInputs" required >
+                    
+                <input type="text" id="firstSongUrl" placeholder="Enter the Song Url" class="rightInputs" required >
+
+                <input type="text" id="secondSongName" placeholder="Enter the 2nd song name"
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" class="leftInputs" required>
+
+                <input type="text" id="secondSongUrl" placeholder="Enter the Song Url" class="rightInputs" required>
 
                 <input type="text" id="thirdSongName" placeholder="Enter the 3rd song name"
-                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-                <input type="text" id="thirdSongUrl" placeholder="Enter the Song Url"><br>
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" class="leftInputs" required>
 
-                <input type="text" id="artistName" placeholder="Enter the Artisit Name" 
-                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-                <input type="text" name="artistImg" id="artistImg" placeholder="Enter the Artist Image url" >
-                <button type="submit">Submit</button>
-                <input type="reset" value="Clear">
+                <input type="text" id="thirdSongUrl" placeholder="Enter the Song Url" class="rightInputs" required>
+
+                <input type="text" id="artistName" placeholder="Enter the Artisit Name"
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$" class="leftInputs" required>
+
+                <input type="text" name="artistImg" id="artistImg" placeholder="Enter the Artist Image url" class="rightInputs"
+                    required>
+                    <button type="reset" class="buttons">Clear</button>
+                <button type="submit" class="buttons">Add</button>
+                
             </div>
         </form>
     </div>
 
-   
+
 
 
 

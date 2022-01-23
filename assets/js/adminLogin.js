@@ -6,18 +6,28 @@ function submitHandler(event){
     const adminPassword = "Admin@Fidaa";
     
 
-    const adminMailInput = document.getElementById("emailId").value;
+    const adminMailInput = document.getElementById("EmailValue").value;
     console.log(adminMailInput);
     const adminPass = document.getElementById("password").value;
     console.log(adminPass);
     if(adminEmailId===adminMailInput && adminPassword === adminPass){
-        const alert = document.getElementById("alert");
+        const alert = document.getElementById("invalidMsg");
         alert.innerHTML = "Successfully LoggedIn";
         window.location.href="./../pages/musicpage.html";
-        
+        break;
     }
     else{
-        const errorAlert = document.getElementById("alert");
+        const errorAlert = document.getElementById("invalidMsg");
         errorAlert.innerHTML = "Invalid Login Credentials"; 
     }
+    }
+
+    function showPass(){
+        let passWord = document.getElementById("password");
+        if(passWord.type=="password"){
+            passWord.type ="text" ;
+        }
+        else{
+            passWord.type ="password" ;
+        }
     }

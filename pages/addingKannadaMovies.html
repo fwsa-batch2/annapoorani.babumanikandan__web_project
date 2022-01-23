@@ -12,34 +12,40 @@
 
 <body>
     <div class="mainContent">
+    <img src="./../assets/img/logo2-removebg-preview.png" alt="logo" class="logo">
+    
         <form action="" onsubmit="addingMovie(event)">
-            <input type="text" placeholder="Add movie name" id="kannadaMovieName" autofocus
-                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-            <input type="url" placeholder="Add movie poster" id="kannadaMoviePoster">
-            <input type="text" placeholder="Enter_Music_Director" id="kannadaMusicDirector"
-                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"><br><br>
+            <div class="allInputs">
+                <p id="addingTamilSongs"><strong>Adding Kannada Movie</strong></p>
+                <input type="text" placeholder="Add movie name" id="kannadaMovieName" autofocus class="movieName" required
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
+                <input type="url" placeholder="Add movie poster" id="kannadaMoviePoster" class="moviePoster" required>
+                <input type="text" placeholder="Enter_Music_Director" id="kannadaMusicDirector" class="musicDirector" required
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"><br><br><br>
+                    
 
-            <input type="text" id="firstSongNameOfKm" placeholder="Enter the 1st song name"
-                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-            <input type="url" id="firstSongUrlOfKm" placeholder="Enter the Song Url"><br>
+                <input type="text" id="firstSongNameOfKm" placeholder="Enter the 1st song name"
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"  class="leftInputs" required>
+                <input type="url" id="firstSongUrlOfKm" placeholder="Enter the Song Url" class="rightInputs" required>
 
-            <input type="text" id="secondSongNameOfKm" placeholder="Enter the 2nd song name"
-                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-            <input type="url" id="secondSongUrlOfKm" placeholder="Enter the Song Url"><br>
+                <input type="text" id="secondSongNameOfKm" placeholder="Enter the 2nd song name"
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"  class="leftInputs" required>
+                <input type="url" id="secondSongUrlOfKm" placeholder="Enter the Song Url" class="rightInputs" required>
 
-            <input type="text" id="thirdSongNameOfKm" placeholder="Enter the 3rd song name"
-                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-            <input type="url" id="thirdSongUrlOfKm" placeholder="Enter the Song Url"><br>
+                <input type="text" id="thirdSongNameOfKm" placeholder="Enter the 3rd song name"
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"  class="leftInputs" required>
+                <input type="url" id="thirdSongUrlOfKm" placeholder="Enter the Song Url" class="rightInputs" required>
 
-            <input type="text" id="artistNameOfKm" placeholder="Artisit Name"
-                pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$">
-            <input type="url" name="artistImgOfKm" id="artistImgOfKm" placeholder="Artist Image url"><br><br><br>
+                <input type="text" id="artistNameOfKm" placeholder="Artisit Name"
+                    pattern="^[a-zA-Z0-9_]+( [a-zA-Z0-9_]+)*$"  class="leftInputs" required> 
+                <input type="url" name="artistImgOfKm" id="artistImgOfKm" placeholder="Artist Image url" class="rightInputs" required>
 
 
 
-            <button type="submit">Add</button>
-            <button type="reset">Clear</button>
 
+                <button type="reset" class="buttons">Clear</button>
+                <button type="submit" class="buttons">Add</button>
+            </div>
         </form>
     </div>
 

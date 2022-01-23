@@ -1,22 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Login</title>
     <link rel="icon" href="/assets/img/pngfind.com-music-symbols-png-1040225.png">
+    <link rel="stylesheet" href="./../assets/css/login.css">
 </head>
+
 <body>
-    <form action="" onsubmit="submitHandler(event)">
-        <div><p id="alert"></p></div>
-        <div>
-            <input type="email" name="emailId" id="emailId" placeholder="Enter Admin Email_Id" required>
-            <input type="password" name="pass" id="password" placeholder="Enter password" required>
-            <input type="submit" value="Submit">
-            <button type="reset">Clear</button>
+    <div>
+        <p id="invalidMsg"></p>
+    </div>
+    
+    <div class="MainContent">
+        
+        <img src="./../assets/img/musicislife.jpg" alt="musicislife" class="Img">
+        <div class="Details">
+            <img src="./../assets/img/logo2-removebg-preview.png" alt="logo" class="logo">
+            <a href="./musicpage.html"><img src="/assets/img/admin.png" alt="admin" id="admin"></a>
+
+            <form onsubmit="submitHandler(event)">
+                <table class="Table">
+                    <caption></caption>
+
+
+                    <tr>
+                        <th id>Admin Email_ID :</th>
+                    </tr>
+                    <tr>
+                        <th id><input type="email" name="emailId" id="EmailValue" placeholder="Enter Admin Email_Id"
+                                required></th>
+                    </tr>
+
+
+                    <tr>
+                        <th id> Password : </th>
+                    </tr>
+                    <tr>
+                        <th id><input type="password" name="pass" id="password" placeholder="Enter password" required>
+
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="check" id="checkbox" onchange="showPass()"><span>
+                                Show Password
+                            </span>
+                        </td>
+                    </tr>
+
+                </table>
+
+                <div class="loginButtons">
+
+                    <!-- <input class="allButtons" type="submit" value="Submit"><br> -->
+                    <button type="submit" class="allButtons">Submit</button>
+                    
+
+
+                </div>
+
+
+
+            </form>
+
         </div>
-    </form>
+    </div>
+
     <script src="./../assets/js/adminLogin.js"></script>
 </body>
+
 </html>
