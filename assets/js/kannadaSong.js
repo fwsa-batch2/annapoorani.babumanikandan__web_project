@@ -4,7 +4,7 @@ const movieName = urlParam.get("movies");
 
 console.log(movieName);
 
-
+// Getting movie details
 function getMovieDetails(name) {
 
     const movieList = JSON.parse(localStorage.getItem("kannadaMovies"));
@@ -19,6 +19,7 @@ function getMovieDetails(name) {
 }
 getMovieDetails(movieName);
 
+// Adding movie in html
 function addingSongs() {
 
     const currentUrlOfPage = window.location.search;
@@ -27,7 +28,7 @@ function addingSongs() {
 
     const movieListInParse = JSON.parse(localStorage.getItem("kannadaMovies"));
 
-    let songs = ''
+    let songs = '';
 
     const movie = movieListInParse.filter(movies => movies.movieName == kannadaMovieName);
     console.group("movie");
@@ -69,7 +70,7 @@ function addingSongs() {
 
 }
 
-
+// Adding songs in html
 function getSongsListHTML(songList) {
     let songsHTML = "";
 

@@ -1,5 +1,5 @@
 let userDetailsInArray = [];
-
+// OnPage load.
 function onPageLoad() {
     const userDetailList = JSON.parse(localStorage.getItem("userDetails"));
     if (userDetailList !== null) {
@@ -7,7 +7,7 @@ function onPageLoad() {
     }
 }
 
-
+// Getting Email_Id , Password from user and Validating both the credentials .
 function submitHandler(event) {
     event.preventDefault();
 
@@ -32,7 +32,7 @@ function submitHandler(event) {
 
 
 }
-
+// Validating Email_Id and Password.
 function isUserDetailExist(userMail, userPassword) {
 
     let isExist = false;
@@ -56,7 +56,7 @@ function isUserDetailExist(userMail, userPassword) {
 }
 
 
-
+// Showing Password in html
 function showPass(){
     let passWord = document.getElementById("password");
     if(passWord.type=="password"){

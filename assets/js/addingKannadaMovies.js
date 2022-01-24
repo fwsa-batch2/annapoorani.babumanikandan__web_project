@@ -54,7 +54,7 @@ function addingMovie(event) {
     
     window.location.href = "./../pages/moreKannadaMovies.html"
 }
-
+// OnPage load
 function renderingMovie() {
 
     const movieListInParse = JSON.parse(localStorage.getItem("kannadaMovies"));
@@ -66,7 +66,7 @@ function renderingMovie() {
 
 }
 renderingMovie();
-
+// Validating movie name
 function validateMovieName(movieNames){
 
     const movieListInParse = JSON.parse(localStorage.getItem("kannadaMovies"));
@@ -84,6 +84,7 @@ function validateMovieName(movieNames){
     }
     return isExist;
 }
+// Validating songs
 function validateSong(song1,song2,song3){
     let isSongExist = false;
 if(song1===song2||song2===song3 || song1===song3 || song1===song2===song3){

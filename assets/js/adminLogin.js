@@ -1,3 +1,4 @@
+// Validating email_ID and Password
 function submitHandler(event){
     event.preventDefault();
 
@@ -21,7 +22,7 @@ function submitHandler(event){
         errorAlert.innerHTML = "Invalid Login Credentials"; 
     }
     }
-
+// Showing password in html
     function showPass(){
         let passWord = document.getElementById("password");
         if(passWord.type=="password"){

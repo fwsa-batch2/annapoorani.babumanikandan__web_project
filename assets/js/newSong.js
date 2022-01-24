@@ -4,7 +4,7 @@ const movieName = urlParam.get("movie");
 
 console.log(movieName);
 
-
+// Getting movie details.
 function getMovieDetails(name){
 
     const movieList = JSON.parse(localStorage.getItem("Movies"));
@@ -19,15 +19,13 @@ function getMovieDetails(name){
 }
 getMovieDetails(movieName);
 
+// Addng movie in html.
 function addingSongs() {
 
     const currentUrlOfPage = window.location.search;
     const urlParams = new URLSearchParams(currentUrlOfPage);
     const movieNames = urlParams.get("movie");
     console.log(movieNames);
-
-
-
 
     const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
 
@@ -75,7 +73,7 @@ function addingSongs() {
 }
 
 
-
+// Adding songs in html.
 function getSongsListHTML(songList) {
     let songsHTML = "";
 

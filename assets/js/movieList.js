@@ -1,5 +1,5 @@
 let movieInArray = [];
-
+// OnPage load
 function renderingMovie() {
 
     const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
@@ -14,7 +14,7 @@ function renderingMovie() {
 
 }
 
-
+// Adding movies in html.
 function addingMovieInHtml() {
 
     console.group("addingMovieInHtml");
@@ -57,7 +57,7 @@ function addingMovieInHtml() {
 
 renderingMovie();
 
-
+// //  Delete the movies from html and localStorage
 function removeMovie(index){
     
     console.group("removemovie");

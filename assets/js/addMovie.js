@@ -62,7 +62,7 @@ function addingMovie(event) {
 
     window.location.href = "./../pages/moreSongs.html"
 }
-
+// onPage load 
 function renderingMovie() {
 
     const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
@@ -74,7 +74,7 @@ function renderingMovie() {
 
 }
 renderingMovie();
-
+// Validating movie name
 function validateMovieName(movieName) {
 
     const movieListInParse = JSON.parse(localStorage.getItem("Movies"));
@@ -96,7 +96,7 @@ function validateMovieName(movieName) {
     }
     return isExist;
 }
-
+// Validating songs
 function validateSong(song1,song2,song3){
     let isSongExist =false;
 if(song1===song2||song2===song3 || song1===song3 || song1===song2===song3){

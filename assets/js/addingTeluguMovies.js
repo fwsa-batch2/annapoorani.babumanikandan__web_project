@@ -55,7 +55,7 @@ function addingMovie(event) {
     
     window.location.href = "./../pages/moreTeluguMovies.html"
 }
-
+// OnPage load
 function renderingMovie() {
 
     const movieListInParse = JSON.parse(localStorage.getItem("teluguMovies"));
@@ -67,7 +67,7 @@ function renderingMovie() {
 
 }
 renderingMovie();
-
+// Validating Movie name
 function validateMovieName(movieNames){
 
     const movieListInParse = JSON.parse(localStorage.getItem("teluguMovies"));
@@ -86,6 +86,7 @@ function validateMovieName(movieNames){
     }
     return isExist;
 }
+// Validating Songs
 function validateSong(song1,song2,song3){
     let isSongExist =false;
 if(song1===song2||song2===song3 || song1===song3 || song1===song2===song3){

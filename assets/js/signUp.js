@@ -1,3 +1,4 @@
+// Validating date of birth.
 console.group("validateDateOfBirth");
     let currentYear = new Date().getFullYear();
     console.log(currentYear);
@@ -11,6 +12,7 @@ console.group("validateDateOfBirth");
 
 let userDetailsInArray = [];
 
+// OnPage load.
 function onPageLoad() {
     console.group("onPageLoad");
     let userList = JSON.parse(localStorage.getItem("userDetails"));
@@ -21,6 +23,7 @@ function onPageLoad() {
     console.groupEnd("onPageLoad");
 }
 
+// Getting details from users and storing in localStorage.
 function submitHandler(event) {
     event.preventDefault();
     console.group("submitHandler");
@@ -65,7 +68,7 @@ function submitHandler(event) {
 }
 
 
-
+// Validation of mailId
 function validate(mailIdOfUser){
 
     console.group("Validation of mailId");
@@ -96,6 +99,7 @@ function validate(mailIdOfUser){
 
 onPageLoad();
 
+// Showing password in html
 function showpass(){
      let passWord = document.getElementById("password");
      let confirmPass = document.getElementById("confirmingPassword");
