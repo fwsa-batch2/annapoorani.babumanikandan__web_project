@@ -15,7 +15,7 @@ function submitHandler(event){
         const alert = document.getElementById("invalidMsg");
         alert.innerHTML = "Successfully LoggedIn";
         window.location.href="./../pages/musicpage.html";
-        return;
+        
     }
     else{
         const errorAlert = document.getElementById("invalidMsg");
