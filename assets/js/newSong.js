@@ -48,7 +48,7 @@ function addingSongs() {
             <span class='span1'>
            
             <a href="./../pages/musicpage.html" class="homePlaylist">Home</a> .
-            <a href="#" class="homePlaylist">Playlist</a> . <a href="#" class="homePlaylist">${movieNameOfTm}</a>
+            <a href="./../pages/moreSongs.html" class="homePlaylist">Movielist</a> . <a href="#" class="homePlaylist">${movieNameOfTm}</a>
                 <br><br>
                 <img id='moviePoster' src='${moviePosters}' alt='${movieNameOfTm}'></span>
     
