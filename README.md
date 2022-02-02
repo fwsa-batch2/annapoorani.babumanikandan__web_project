@@ -1,5 +1,9 @@
 ### html-project-template
 
+### Live URL Link - https://fwsa-batch2.github.io/annapoorani.babumanikandan__web_project/
+### GitHub Link - https://github.com/fwsa-batch2/annapoorani.babumanikandan__web_project/
+### Sonarcloud Link - https://sonarcloud.io/project/overview?id=fwsa-batch2_annapoorani.babumanikandan__web_project
+
 ### Features
 
 1. LOGIN PAGE (Completed)
