@@ -14,7 +14,7 @@ function submitHandler(event){
     if(adminEmailId===adminMailInput && adminPassword === adminPass){
         const alert = document.getElementById("invalidMsg");
         alert.innerHTML = "Successfully LoggedIn";
-        window.location.href="./../pages/musicpage.html";
+        window.location.href="./../pages/adminHomePage.html";
         
     }
     else{
@@ -31,4 +31,11 @@ function submitHandler(event){
         else{
             passWord.type ="password" ;
         }
+    }
+
+    function adminHomePage(){
+
+        let home ='';
+
+        home +=``;
     }

@@ -1,0 +1,89 @@
+*{
+    margin: 0; 
+    /* padding: 0; */
+   /* box-sizing: border-box; */
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body{
+    background-color: black;
+}
+#sideMenu{
+    position:absolute;
+    width: 18%;
+    height:100%;
+    /* background-color: palegoldenrod; */
+    border-right: #de6262 2px solid ;
+    
+}
+
+#logo{
+    position: absolute;
+    width: 12%;
+    margin-top: 30%;
+    margin-left: 20%;
+    background-color: burlywood;
+   
+}
+#item{
+    
+    /* margin-left: 25%; */
+    margin-top: 80%;
+   
+   font-size: 32px;
+   color: #de6262 ;
+   gap: 40px;
+   display: flex;
+   flex-direction:column;
+  
+}
+#appName{
+    position: absolute;
+    font-size: 35px;
+    margin-top: 30%; 
+     margin-left: 40%;
+    color: #de6262 ;
+
+}
+#itemLogo{
+    /* position: static; */
+    /* margin-top: 10%; */
+    width: 15%;
+    
+    
+}
+.topic{
+    /* background-color:  brown; */
+    
+    height: 6vh;
+}
+#mainContent{
+    /* position: absolute; */
+    width: 90%;
+    height: 100vh;
+    margin-left: 18%;
+    border-left:#de6262 2px solid ;
+    /* background-color: chartreuse; */
+    /* background-color: blue; */
+
+}
+.topic a{
+    
+    margin-left: 20%;
+    color: white;
+    text-decoration: none;
+
+}
+#movieList{
+    margin-top: 20%;
+    position: absolute;
+    width: 90%;
+    background-color: burlywood;
+    height: 40vh;
+}
+.poster{
+    margin-left: 5%;
+    border-radius: 24px;
+    display:flex;
+    flex-direction: row;
+}
