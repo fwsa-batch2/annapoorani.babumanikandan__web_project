@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,31 +9,33 @@
     <link rel="icon" href="/assets/img/pngfind.com-music-symbols-png-1040225.png">
     <link rel="stylesheet" href="./../assets/css/adminHomePage.css">
 </head>
+
 <body>
-    
-    
+
+
 
     <div id="sideMenu">
-        <p id="appName">Fidaa</p>
-        <img src="./../assets/img/pngfind.com-music-symbols-png-1040225-removebg-preview.png" alt="logo" id="logo">
-        
-        <div id='item'>
-           <span class="topic"> <a href=""><img src="./../assets/img/Admin_01.png" alt="logo" id="itemLogo">Home</a></span> 
-            <span class="topic"> <a href="" onclick="clickHandler(event)"> <img src="./../assets/img/film-reel (1).png" alt="logo" id="itemLogo">Movies</a></span>
-            <span class="topic"><a href=""> <img src="./../assets/img/music-album_01.png" alt="logo" id="itemLogo">Songs</a></span>
-            <span class="topic"><a href=""> <img src="./../assets/img/music-album_01.png" alt="logo" id="itemLogo">Albums</a></span>
+        <div>
+            <p id="appName">Fidaa</p>
+            <img src="./../assets/img/pngfind.com-music-symbols-png-1040225-removebg-preview.png" alt="logo" id="logo">
         </div>
-        
+        <div id='menu'>
+            <ul>
+                <li><a href="#" class="active">HOME</a> </li>
+                <li><a href="#" onclick="clickHandler(event) ">MOVIES</a> </li>
+                <li><a href="#">SONGS</a> </li>
+                <li><a href="#">ALBUMS</a> </li>
+                <li><a href="#">SETTINGS</a> </li>
+            </ul>
+            
+        </div>
 
-        </div>
-            <!-- <ul id="items">
-                <li><img src="./../assets/img/Admin_01.png" alt="logo" id="itemLogo"> Admin</li>
-                <li> <img src="./../assets/img/film-reel (1).png" alt="logo" id="itemLogo"> Movies</li>
-                <li> <img src="./../assets/img/music-album_01.png" alt="logo" id="itemLogo"> Albums</li>
-                </ul> -->
+
+    </div>
+   
     </div>
     <div id='mainContent'>
-        
+
         <div id='movieList'>
             <!-- <img src="./../assets/img/ARR.webp" alt=" " class='poster' > -->
             &nbsp;
@@ -40,4 +43,5 @@
     </div>
     <script src="./../assets/js/adminHomePage.js"></script>
 </body>
+
 </html>

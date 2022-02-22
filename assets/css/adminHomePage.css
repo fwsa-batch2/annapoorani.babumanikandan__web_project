@@ -1,19 +1,32 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Acme&family=Readex+Pro:wght@300&family=Ubuntu:wght@300;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Readex+Pro:wght@300&family=Redressed&family=Ubuntu:wght@300;500&display=swap');
 *{
     margin: 0; 
     /* padding: 0; */
    /* box-sizing: border-box; */
     overflow-x: hidden;
     overflow-y: hidden;
+    /* font-family: 'Acme', sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Ubuntu', sans-serif; */
+    font-family: 'Acme', sans-serif;
+font-family: 'Readex Pro', sans-serif;
+font-family: 'Redressed', cursive;
+font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 body{
     background-color: black;
 }
 #sideMenu{
-    position:absolute;
+    position:fixed;
     width: 18%;
     height:100%;
     /* background-color: palegoldenrod; */
     border-right: #de6262 2px solid ;
+   
     
 }
 
@@ -25,18 +38,37 @@ body{
     background-color: burlywood;
    
 }
-#item{
+#menu{
+    display: block;
+    color: blue;
+    text-transform: uppercase;
     
-    /* margin-left: 25%; */
-    margin-top: 80%;
-   
-   font-size: 32px;
-   color: #de6262 ;
-   gap: 40px;
-   display: flex;
-   flex-direction:column;
-  
+    margin-top: 70%;
+    
+    margin-left: 5%;
+    
+    
+
 }
+#menu ul li a{
+    gap: 50px;
+    font-size: 30px;
+    margin-left: 10%;
+    width: 70%;
+    height: 30vh;
+    /* background-color: beige; */
+    padding: 10px;
+    letter-spacing: 1px;
+    line-height: 2.5em;
+    /* transition: all 0.25 ease; */
+}
+#menu ul li a :last-child{
+    margin-top: 0;
+}
+#menu ul li a :hover ,#menu ul li a.active{
+    color:#de6262 ;
+}
+
 #appName{
     position: absolute;
     font-size: 35px;

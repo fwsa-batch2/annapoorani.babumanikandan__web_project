@@ -1,21 +1,58 @@
-let movieList =[]
-function search(event){
-    event.preventDefault();
-    let searchInput = document.getElementById("searchInput").value;
-
+let movieName =[];
+// console.log(movieName);
+function search(){
+    searchInput = document.getElementById("searchInput").value;
     console.log(searchInput);
-    movieList.push(searchInput);
+
+    movieName.push(searchInput);
+
+    // const searchedMovie = JSON.stringify(Setitem)
+   
+
+
+    // let movieListInArray = JSON.parse(localStorage.getItem("Movies"));
+    // console.log(movieListInArray);
+
+if(getMovieDetails(searchInput)!= null){
+
+    window.location.href="./../pages/master.html"
+}
+
+else{
+
+    window.location.href="./../pages/master.html"
+
+}
+
+
+}
+function getMovieDetails(name){
+    
+    const movieList = JSON.parse(localStorage.getItem("Movies"));
     console.log(movieList);
 
-    let movieListInString = JSON.stringify(movieList);
-    localStorage.setItem("Movies",movieListInString);
-    
-    renderingMovieList()
+    const movie = movieList.find(element => element.movieName == name);
+    console.log(movie);
+
+   
+    return movie;
+
 }
-function renderingMovieList(){
-    let movieListInArray = JSON.parse(localStorage.getItem("Movies"))
-    console.log(movieListInArray);
+
+function showMovie(){
+
+   
+  let movie = getMovieDetails(movieName);
+
+  console.log(movie);
+
     
-    movieList = movieListInArray;
+
+
 }
-renderingMovieList()
+showMovie();
+
+function myFunction() {
+    var popup = document.getElementById("user");
+    popup.classList.toggle("show");
+  }
